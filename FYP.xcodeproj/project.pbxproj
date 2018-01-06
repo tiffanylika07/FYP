@@ -14,6 +14,8 @@
 		C850590F1FFD204A00A8367E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C850590D1FFD204A00A8367E /* LaunchScreen.storyboard */; };
 		C850591A1FFD204A00A8367E /* FYPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85059191FFD204A00A8367E /* FYPTests.swift */; };
 		C85059251FFD204A00A8367E /* FYPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85059241FFD204A00A8367E /* FYPUITests.swift */; };
+		C8B0AF7B20010DA700ABBAFD /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0AF7A20010DA700ABBAFD /* MenuTableViewCell.swift */; };
+		C8B0AF7F2001194E00ABBAFD /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0AF7E2001194E00ABBAFD /* MenuTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C85059201FFD204A00A8367E /* FYPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85059241FFD204A00A8367E /* FYPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYPUITests.swift; sourceTree = "<group>"; };
 		C85059261FFD204A00A8367E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8B0AF7A20010DA700ABBAFD /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		C8B0AF7E2001194E00ABBAFD /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 			children = (
 				C85059041FFD204A00A8367E /* AppDelegate.swift */,
 				C85059061FFD204A00A8367E /* ViewController.swift */,
+				C8B0AF7E2001194E00ABBAFD /* MenuTableViewController.swift */,
 				C85059081FFD204A00A8367E /* Main.storyboard */,
 				C850590B1FFD204A00A8367E /* Assets.xcassets */,
 				C850590D1FFD204A00A8367E /* LaunchScreen.storyboard */,
+				C8B0AF7A20010DA700ABBAFD /* MenuTableViewCell.swift */,
 				C85059101FFD204A00A8367E /* Info.plist */,
 			);
 			path = FYP;
@@ -193,6 +199,7 @@
 				TargetAttributes = {
 					C85059001FFD204A00A8367E = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = J5A4F4887H;
 						ProvisioningStyle = Automatic;
 					};
 					C85059141FFD204A00A8367E = {
@@ -261,6 +268,8 @@
 			files = (
 				C85059071FFD204A00A8367E /* ViewController.swift in Sources */,
 				C85059051FFD204A00A8367E /* AppDelegate.swift in Sources */,
+				C8B0AF7F2001194E00ABBAFD /* MenuTableViewController.swift in Sources */,
+				C8B0AF7B20010DA700ABBAFD /* MenuTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,7 +421,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J5A4F4887H;
 				INFOPLIST_FILE = FYP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TiffanyLi.FYP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +435,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J5A4F4887H;
 				INFOPLIST_FILE = FYP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TiffanyLi.FYP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +518,7 @@
 				C850592B1FFD204A00A8367E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C850592C1FFD204A00A8367E /* Build configuration list for PBXNativeTarget "FYPTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +527,7 @@
 				C850592E1FFD204A00A8367E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C850592F1FFD204A00A8367E /* Build configuration list for PBXNativeTarget "FYPUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +536,7 @@
 				C85059311FFD204A00A8367E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
