@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C83A016B2007D74700EE6DBA /* Puzzle_1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83A016A2007D74700EE6DBA /* Puzzle_1_ViewController.swift */; };
+		C83A01732017A08A00EE6DBA /* DetailConceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83A01722017A08A00EE6DBA /* DetailConceptViewController.swift */; };
 		C85059051FFD204A00A8367E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85059041FFD204A00A8367E /* AppDelegate.swift */; };
 		C85059071FFD204A00A8367E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85059061FFD204A00A8367E /* ViewController.swift */; };
 		C850590A1FFD204A00A8367E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85059081FFD204A00A8367E /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C83A016A2007D74700EE6DBA /* Puzzle_1_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle_1_ViewController.swift; sourceTree = "<group>"; };
+		C83A01722017A08A00EE6DBA /* DetailConceptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConceptViewController.swift; sourceTree = "<group>"; };
 		C85059011FFD204A00A8367E /* FYP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85059041FFD204A00A8367E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C85059061FFD204A00A8367E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				C85059061FFD204A00A8367E /* ViewController.swift */,
 				C8B0AF7E2001194E00ABBAFD /* MenuTableViewController.swift */,
 				C85059081FFD204A00A8367E /* Main.storyboard */,
+				C83A01722017A08A00EE6DBA /* DetailConceptViewController.swift */,
+				C83A016A2007D74700EE6DBA /* Puzzle_1_ViewController.swift */,
 				C850590B1FFD204A00A8367E /* Assets.xcassets */,
 				C850590D1FFD204A00A8367E /* LaunchScreen.storyboard */,
 				C8B0AF7A20010DA700ABBAFD /* MenuTableViewCell.swift */,
@@ -269,6 +275,8 @@
 				C85059071FFD204A00A8367E /* ViewController.swift in Sources */,
 				C85059051FFD204A00A8367E /* AppDelegate.swift in Sources */,
 				C8B0AF7F2001194E00ABBAFD /* MenuTableViewController.swift in Sources */,
+				C83A016B2007D74700EE6DBA /* Puzzle_1_ViewController.swift in Sources */,
+				C83A01732017A08A00EE6DBA /* DetailConceptViewController.swift in Sources */,
 				C8B0AF7B20010DA700ABBAFD /* MenuTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
