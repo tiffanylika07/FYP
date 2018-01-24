@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C83A016B2007D74700EE6DBA /* Puzzle_1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83A016A2007D74700EE6DBA /* Puzzle_1_ViewController.swift */; };
 		C83A01732017A08A00EE6DBA /* DetailConceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83A01722017A08A00EE6DBA /* DetailConceptViewController.swift */; };
+		C83A01772018E44D00EE6DBA /* Neucha.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C83A01762018E44D00EE6DBA /* Neucha.ttf */; };
 		C85059051FFD204A00A8367E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85059041FFD204A00A8367E /* AppDelegate.swift */; };
 		C85059071FFD204A00A8367E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85059061FFD204A00A8367E /* ViewController.swift */; };
 		C850590A1FFD204A00A8367E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85059081FFD204A00A8367E /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		C83A016A2007D74700EE6DBA /* Puzzle_1_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle_1_ViewController.swift; sourceTree = "<group>"; };
 		C83A01722017A08A00EE6DBA /* DetailConceptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConceptViewController.swift; sourceTree = "<group>"; };
+		C83A01762018E44D00EE6DBA /* Neucha.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Neucha.ttf; sourceTree = "<group>"; };
 		C85059011FFD204A00A8367E /* FYP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85059041FFD204A00A8367E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C85059061FFD204A00A8367E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,15 +108,16 @@
 			isa = PBXGroup;
 			children = (
 				C85059041FFD204A00A8367E /* AppDelegate.swift */,
+				C83A01722017A08A00EE6DBA /* DetailConceptViewController.swift */,
 				C85059061FFD204A00A8367E /* ViewController.swift */,
 				C8B0AF7E2001194E00ABBAFD /* MenuTableViewController.swift */,
 				C85059081FFD204A00A8367E /* Main.storyboard */,
-				C83A01722017A08A00EE6DBA /* DetailConceptViewController.swift */,
 				C83A016A2007D74700EE6DBA /* Puzzle_1_ViewController.swift */,
 				C850590B1FFD204A00A8367E /* Assets.xcassets */,
 				C850590D1FFD204A00A8367E /* LaunchScreen.storyboard */,
 				C8B0AF7A20010DA700ABBAFD /* MenuTableViewCell.swift */,
 				C85059101FFD204A00A8367E /* Info.plist */,
+				C83A01762018E44D00EE6DBA /* Neucha.ttf */,
 			);
 			path = FYP;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			files = (
 				C850590F1FFD204A00A8367E /* LaunchScreen.storyboard in Resources */,
 				C850590C1FFD204A00A8367E /* Assets.xcassets in Resources */,
+				C83A01772018E44D00EE6DBA /* Neucha.ttf in Resources */,
 				C850590A1FFD204A00A8367E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -417,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

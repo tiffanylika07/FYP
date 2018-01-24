@@ -7,6 +7,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Neucha.ttf">
+            <string>Neucha</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -23,11 +28,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbq-2H-Hsz">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FYP_Main_Vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dgf-Qm-bwu">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mso-cZ-pUu">
-                                        <rect key="frame" x="139" y="266" width="113" height="81"/>
+                                        <rect key="frame" x="131" y="449" width="113" height="81"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Start"/>
                                         <connections>
                                             <segue destination="qvy-4y-MgU" kind="show" id="jly-bm-77r"/>
                                         </connections>
@@ -47,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-345" y="132"/>
+            <point key="canvasLocation" x="-346.39999999999998" y="131.78410794602701"/>
         </scene>
         <!--Category-->
         <scene sceneID="ttX-Vq-YF5">
@@ -78,9 +86,9 @@
                                                                 <constraint firstAttribute="width" constant="80" id="rzj-VO-KMv"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jc5-UI-OiB">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jc5-UI-OiB">
                                                             <rect key="frame" x="135" y="5" width="220" height="129.5"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                            <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -131,12 +139,7 @@
                     <connections>
                         <outlet property="backButton" destination="Dmz-5A-fl5" id="PG7-qP-mtl"/>
                         <outlet property="menuView" destination="2go-tL-Sy2" id="KGw-dy-ewv"/>
-                        <segue destination="fgh-am-5l8" kind="show" identifier="showConcept3" id="8hb-46-0sd"/>
-                        <segue destination="V13-hG-BN0" kind="show" identifier="showConcept4" id="7EM-0c-SdX"/>
                         <segue destination="Th7-Jy-rZI" kind="show" identifier="showConcept1" id="bp3-rC-uDv"/>
-                        <segue destination="xjA-H9-Qan" kind="show" identifier="showConcept2" id="Rcy-fD-Ez7"/>
-                        <segue destination="eUK-l4-yQr" kind="show" identifier="showConcept5" id="dsd-BZ-d34"/>
-                        <segue destination="Fgv-YU-3gG" kind="show" identifier="showConcept6" id="n1n-Vg-5W5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pm-K5-ViB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -192,138 +195,6 @@
             <point key="canvasLocation" x="454" y="133"/>
         </scene>
         <!--Detail Concept View Controller-->
-        <scene sceneID="fca-gY-hkg">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fG0-fb-l4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="fgh-am-5l8" customClass="DetailConceptViewController" customModule="FYP" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="TP4-tx-GKL"/>
-                        <viewControllerLayoutGuide type="bottom" id="mda-TF-ygH"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="J6p-yl-uC4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0L3-zG-1Iw">
-                                <rect key="frame" x="16" y="485" width="343" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.43362242960000003" blue="0.71893820819999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <gestureRecognizers/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Basic Algebra" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4L-bA-CQQ">
-                                <rect key="frame" x="0.0" y="64" width="375" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Testing Text View" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nIg-ep-0j4">
-                                <rect key="frame" x="16" y="187" width="343" height="290"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="conceptTitle" destination="M4L-bA-CQQ" id="ETI-k7-Uqc"/>
-                        <outlet property="puzzleBtn" destination="0L3-zG-1Iw" id="RKh-MX-DKI"/>
-                    </connections>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="2249" y="-133"/>
-        </scene>
-        <!--Detail Concept View Controller-->
-        <scene sceneID="GtF-mz-g46">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K65-5p-mm8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="V13-hG-BN0" customClass="DetailConceptViewController" customModule="FYP" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5a1-tO-wQL"/>
-                        <viewControllerLayoutGuide type="bottom" id="Vim-Xu-dMd"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6Zs-AP-l8A">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C3l-ms-Qqx">
-                                <rect key="frame" x="16" y="485" width="343" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.43362242960000003" blue="0.71893820819999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <gestureRecognizers/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4B-8e-de8">
-                                <rect key="frame" x="0.0" y="64" width="375" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Different text is OK?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cbW-vW-m0Z">
-                                <rect key="frame" x="16" y="187" width="343" height="290"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="conceptTitle" destination="Q4B-8e-de8" id="kKc-IZ-3OM"/>
-                        <outlet property="puzzleBtn" destination="C3l-ms-Qqx" id="rpc-gx-Yo7"/>
-                    </connections>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="2249" y="543"/>
-        </scene>
-        <!--Detail Concept View Controller-->
-        <scene sceneID="l7T-kQ-tBh">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZI6-BD-mCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="xjA-H9-Qan" customClass="DetailConceptViewController" customModule="FYP" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gCR-g4-PI2"/>
-                        <viewControllerLayoutGuide type="bottom" id="sht-OJ-ZVJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Fdp-8b-DbC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xgb-54-khr">
-                                <rect key="frame" x="16" y="485" width="343" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.43362242960000003" blue="0.71893820819999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <gestureRecognizers/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Basic Algebra" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHs-fl-3ZU">
-                                <rect key="frame" x="0.0" y="64" width="375" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Testing Text View" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oDR-P2-cmJ">
-                                <rect key="frame" x="16" y="187" width="343" height="290"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="conceptTitle" destination="dHs-fl-3ZU" id="LaZ-N9-5CG"/>
-                        <outlet property="puzzleBtn" destination="xgb-54-khr" id="Urv-Rt-bze"/>
-                    </connections>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="2249" y="-767"/>
-        </scene>
-        <!--Detail Concept View Controller-->
         <scene sceneID="R1q-Gy-hSV">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jl3-Ps-dN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -333,130 +204,80 @@
                         <viewControllerLayoutGuide type="bottom" id="7EN-rO-nQT"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="H00-vh-VJv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="icc-rv-Ko2">
-                                <rect key="frame" x="16" y="485" width="343" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.43362242960000003" blue="0.71893820819999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <gestureRecognizers/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Area and Volume" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S08-Nd-Xk9">
-                                <rect key="frame" x="0.0" y="64" width="375" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Testing Text View" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YlU-om-xHK">
-                                <rect key="frame" x="16" y="187" width="343" height="290"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UmZ-en-mOK">
+                                <rect key="frame" x="0.0" y="64" width="381" height="130"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Li-dO-nH9">
+                                        <rect key="frame" x="30" y="0.0" width="197" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_1" translatesAutoresizingMaskIntoConstraints="NO" id="hC6-In-6iy">
+                                        <rect key="frame" x="235" y="40" width="138" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="jWK-S4-mCs"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y3F-Bj-uv2">
+                                <rect key="frame" x="0.0" y="194" width="375" height="706"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZGh-Qr-uDg">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="706"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_1" translatesAutoresizingMaskIntoConstraints="NO" id="FFg-LQ-3GH">
+                                                <rect key="frame" x="118" y="635" width="138" height="51"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="0.37799657530000003" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="706" id="SKb-zL-fbM"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZGh-Qr-uDg" secondAttribute="trailing" id="4HX-nz-u10"/>
+                                    <constraint firstItem="ZGh-Qr-uDg" firstAttribute="leading" secondItem="Y3F-Bj-uv2" secondAttribute="leading" id="B7X-pY-CKh"/>
+                                    <constraint firstItem="ZGh-Qr-uDg" firstAttribute="top" secondItem="Y3F-Bj-uv2" secondAttribute="top" id="JhY-Cz-cKf"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZGh-Qr-uDg" secondAttribute="bottom" id="SfE-6w-5bQ"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Y3F-Bj-uv2" secondAttribute="trailing" id="1Yy-ar-GMe"/>
+                            <constraint firstItem="UmZ-en-mOK" firstAttribute="top" secondItem="8gb-nv-ePR" secondAttribute="bottom" id="5uo-pg-1E7"/>
+                            <constraint firstItem="Y3F-Bj-uv2" firstAttribute="top" secondItem="UmZ-en-mOK" secondAttribute="bottom" id="I5Z-G7-vRS"/>
+                            <constraint firstItem="UmZ-en-mOK" firstAttribute="trailing" secondItem="Y3F-Bj-uv2" secondAttribute="trailing" id="J9p-bc-1Mp"/>
+                            <constraint firstItem="Y3F-Bj-uv2" firstAttribute="leading" secondItem="H00-vh-VJv" secondAttribute="leading" id="Mku-83-cc2"/>
+                            <constraint firstItem="UmZ-en-mOK" firstAttribute="left" secondItem="H00-vh-VJv" secondAttribute="left" id="eJL-SS-mZs"/>
+                            <constraint firstItem="Y3F-Bj-uv2" firstAttribute="bottom" secondItem="7EN-rO-nQT" secondAttribute="top" id="is6-Fp-c1H"/>
+                            <constraint firstItem="ZGh-Qr-uDg" firstAttribute="width" secondItem="H00-vh-VJv" secondAttribute="width" id="qLR-sj-TRF"/>
+                        </constraints>
                     </view>
+                    <size key="freeformSize" width="375" height="900"/>
                     <connections>
-                        <outlet property="conceptTitle" destination="S08-Nd-Xk9" id="nxb-yB-EW4"/>
-                        <outlet property="puzzleBtn" destination="icc-rv-Ko2" id="KzA-A2-G0E"/>
+                        <outlet property="conceptTitle" destination="6Li-dO-nH9" id="0co-xx-vnw"/>
+                        <outlet property="contentView" destination="ZGh-Qr-uDg" id="Mfu-Bg-nfi"/>
+                        <outlet property="puzzleBtn" destination="hC6-In-6iy" id="rNa-Sa-sdQ"/>
+                        <outlet property="titleView" destination="UmZ-en-mOK" id="ijj-zv-rfH"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2249" y="-1452"/>
-        </scene>
-        <!--Detail Concept View Controller-->
-        <scene sceneID="gdK-hq-Txv">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CGH-cK-emx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="eUK-l4-yQr" customClass="DetailConceptViewController" customModule="FYP" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FRb-fK-Og9"/>
-                        <viewControllerLayoutGuide type="bottom" id="PXx-Ft-JH1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fh3-EL-G49">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rgr-4B-h0j">
-                                <rect key="frame" x="16" y="485" width="343" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.43362242960000003" blue="0.71893820819999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <gestureRecognizers/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuv-9f-veh">
-                                <rect key="frame" x="0.0" y="64" width="375" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Different text is OK?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="M23-oZ-Fgv">
-                                <rect key="frame" x="16" y="187" width="343" height="290"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="conceptTitle" destination="wuv-9f-veh" id="MVa-cf-Y71"/>
-                        <outlet property="puzzleBtn" destination="Rgr-4B-h0j" id="hfW-AI-ceg"/>
-                    </connections>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="2249" y="1236"/>
-        </scene>
-        <!--Detail Concept View Controller-->
-        <scene sceneID="BdD-NI-mDF">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7j9-me-IRS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="Fgv-YU-3gG" customClass="DetailConceptViewController" customModule="FYP" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wHQ-S4-1t4"/>
-                        <viewControllerLayoutGuide type="bottom" id="UQ8-Yb-6bv"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ROY-mA-V32">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dXJ-eU-aYI">
-                                <rect key="frame" x="16" y="485" width="343" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.43362242960000003" blue="0.71893820819999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <gestureRecognizers/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcS-U3-7j4">
-                                <rect key="frame" x="0.0" y="64" width="375" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Different text is OK?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ykZ-ir-cmQ">
-                                <rect key="frame" x="16" y="187" width="343" height="290"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="conceptTitle" destination="xcS-U3-7j4" id="G08-mo-lLM"/>
-                        <outlet property="puzzleBtn" destination="dXJ-eU-aYI" id="tvF-Bl-4m6"/>
-                    </connections>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="2249" y="1968"/>
+            <point key="canvasLocation" x="2248.8000000000002" y="-1452.7736131934034"/>
         </scene>
     </scenes>
     <resources>
+        <image name="FYP_Main_Vertical" width="1080" height="1920"/>
         <image name="icon_1" width="512" height="512"/>
     </resources>
 </document>
