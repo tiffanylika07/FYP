@@ -23,37 +23,49 @@ class MenuCell {
         
     }
 }
+
+struct cell : Decodable{
+    var id: String
+    var name: String
+    var image: String
+    var color: [CGFloat]
+    
+}
 class MenuTableViewController: UITableViewController {
     @IBOutlet weak var menuView: UITableView!
     @IBOutlet weak var backButton: UIBarButtonItem!
+    
     var elements = [MenuCell]()
     
     private func lodadTableData(){
-        //table icon list
-        let icon1 = UIImage(named: "icon_1")
-        let icon2 = #imageLiteral(resourceName: "icon_direction")
-        let icon3 = #imageLiteral(resourceName: "icon_algebra")
-        let icon4 = #imageLiteral(resourceName: "icon_shape")
-        let icon5 = #imageLiteral(resourceName: "icon_time")
-        let icon6 = #imageLiteral(resourceName: "icon_fraction")
         
-        //cell list
-        let cell1 = MenuCell(id:"1",name: "Area and Volume", photo: icon1, color: UIColor(red: 77/255, green: 148/255, blue: 255/255, alpha: 1))
-        let cell2 = MenuCell(id:"2",name: "Direction and Scale Drawing", photo: icon2, color: UIColor(red: 255/255, green: 77/255, blue: 136/255, alpha: 1))
-        let cell3 = MenuCell(id:"3",name: "Basic Algebra", photo: icon3, color: UIColor(red: 255/255, green: 140/255, blue: 26/255, alpha: 1))
-        let cell4 = MenuCell(id:"4",name: "Shape and Symmetry", photo: icon4, color: UIColor(red: 92/255, green: 214/255, blue: 92/255, alpha: 1))
-        let cell5 = MenuCell(id:"5",name: "Time", photo: icon5, color: UIColor(red: 255/255, green: 255/255, blue: 51/255, alpha: 1))
-        let cell6 = MenuCell(id:"6",name: "Fraction", photo: icon6, color: UIColor(red: 194/255, green: 102/255, blue: 255/255, alpha: 1))
-        
-        
-        elements += [cell1,cell2,cell3,cell4,cell5,cell6]
+        let path = Bundle.main.path(forResource: "MenuCellJSON", ofType: "json")
+        let url = URL(fileURLWithPath: path!)
+        do{
+            let data = try Data(contentsOf:url)
+            let menuCellList = try JSONDecoder().decode([cell].self, from: data)
+            
+            for aCell in menuCellList{
+                //let icon = UIImage(named: aCell.image )
+                let aColor =  UIColor(red: aCell.color[0]/255 , green: aCell.color[1]/255 , blue: aCell.color[2]/255 , alpha: aCell.color[3])
+                let cell = MenuCell(id: aCell.id,name:  aCell.name, photo: UIImage(named: aCell.image), color: aColor)
+               print(cell)
+                elements.append(cell)
+            }
+        }
+        catch{
+            print("Failed to load Menu List")
+        }
+
         elements.sort { (first, second) -> Bool in
             if(first.name < second.name){
                 return true
             }
             return false
         }
+        print(elements)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.menuView.delegate = self
@@ -101,9 +113,7 @@ class MenuTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = menuView.dequeueReusableCell(withIdentifier: "tableCell") as! MenuTableViewCell
-        
         let element = elements[indexPath.row]
-        
         cell.menuIcon.image = element.photo
         cell.menuLbl.text = element.name
         cell.menuLbl.font = UIFont(name: "Neucha", size: 36)
@@ -112,6 +122,7 @@ class MenuTableViewController: UITableViewController {
         cell.layer.cornerRadius = 30
         return cell
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let backItem = UIBarButtonItem()
         backItem.title = "Category"
@@ -120,25 +131,7 @@ class MenuTableViewController: UITableViewController {
         if let detailViewController = segue.destination as? DetailConceptViewController{
             detailViewController.selectedCellName = seletedCell.name
             detailViewController.bgColor = seletedCell.bgColor
-            if(segue.identifier == "showConcept1"){
-                
-                detailViewController.selectedCellID = 1
-            }
-            else if(segue.identifier == "showConcept2"){
-                detailViewController.selectedCellID = 2
-            }
-            else if(segue.identifier == "showConcept3"){
-                detailViewController.selectedCellID = 3
-            }
-            else if(segue.identifier == "showConcept4"){
-                detailViewController.selectedCellID = 4
-            }
-            else if(segue.identifier == "showConcept5"){
-                detailViewController.selectedCellID = 5
-            }
-            else if(segue.identifier == "showConcept6"){
-                detailViewController.selectedCellID = 6
-            }
+            detailViewController.selectedCellID = Int(seletedCell.id)!
         }
         
 

@@ -1,0 +1,39 @@
+ [
+    {
+      "name": "Area and Volume",
+      "id": "1",
+      "color": [77,148,255,1],
+      "image": "icon_1"
+    },
+    {
+      "name": "Direction and Scale Drawing",
+      "id": "2",
+      "color": [255,77,136,1],
+      "image": "icon_direction"
+    },
+    {
+      "name": "Basic Algebra",
+      "id": "3",
+      "color": [255,140,26,1],
+      "image": "icon_algebra"
+    },
+    {
+      "name": "Shape and Symmetry",
+      "id": "4",
+      "color": [92,214,92,1],
+      "image": "icon_shape"
+    },
+    {
+      "name": "Time",
+      "id": "5",
+      "color": [194,102,255,1],
+      "image": "icon_time"
+    },
+    {
+      "name": "Fraction",
+      "id": "6",
+      "color": [255,255,51,1],
+      "image": "icon_fraction"
+    }
+  ]
+
