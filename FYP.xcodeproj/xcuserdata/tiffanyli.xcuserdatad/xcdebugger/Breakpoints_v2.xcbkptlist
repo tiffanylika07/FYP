@@ -2,4 +2,99 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FYP/DetailConceptViewController.swift"
+            timestampString = "538683106.333469"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2"
+            endingLineNumber = "2"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FYP.DetailConceptViewController.__deallocating_deinit"
+                  moduleName = "FYP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tiffanyli/Documents/XCode%20Projects/FYP/FYP/DetailConceptViewController.swift"
+                  timestampString = "538680559.325837"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FYP.DetailConceptViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; FYP.DetailConceptViewController"
+                  moduleName = "FYP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tiffanyli/Documents/XCode%20Projects/FYP/FYP/DetailConceptViewController.swift"
+                  timestampString = "538680559.328344"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FYP.DetailConceptViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; FYP.DetailConceptViewController"
+                  moduleName = "FYP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tiffanyli/Documents/XCode%20Projects/FYP/FYP/DetailConceptViewController.swift"
+                  timestampString = "538680559.331244"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FYP.DetailConceptViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;FYP.DetailConceptViewController&gt;"
+                  moduleName = "FYP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tiffanyli/Documents/XCode%20Projects/FYP/FYP/DetailConceptViewController.swift"
+                  timestampString = "538680559.333968"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FYP.DetailConceptViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;FYP.DetailConceptViewController&gt;"
+                  moduleName = "FYP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tiffanyli/Documents/XCode%20Projects/FYP/FYP/DetailConceptViewController.swift"
+                  timestampString = "538680559.337986"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

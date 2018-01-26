@@ -11,9 +11,10 @@ import UIKit
 class DetailConceptViewController: UIViewController {
     @IBOutlet weak var conceptTitle: UILabel!
     
-    @IBOutlet var contentView: UIView!
-    @IBOutlet weak var puzzleBtn: UIImageView!
     @IBOutlet weak var titleView: UIView!
+    @IBOutlet weak var containerView: UIView!
+    
+    @IBOutlet weak var buttonView: UIView!
     
     var selectedCellName = ""
     var selectedCellID = 0
@@ -25,12 +26,8 @@ class DetailConceptViewController: UIViewController {
         conceptTitle.font = UIFont(name: "Neucha", size: 40)
         conceptTitle.adjustsFontSizeToFitWidth = true
         titleView.backgroundColor = bgColor
-        titleView.layer.cornerRadius = 10.00
-        contentView.backgroundColor = adjustColor(aColor: bgColor!,by: 30.0)
-        print(selectedCellID)
-        // Do any additional setup after loading the view.
-        
-        //self.puzzleBtn.frame.origin.y = self.puzzleBtn.frame.minY
+        //titleView.layer.cornerRadius = 10.00
+        containerView.backgroundColor = adjustColor(aColor: bgColor!,by: 30.0)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +35,15 @@ class DetailConceptViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    //segueToContent
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToContent" {
+            if let contentController = segue.destination as? ContentViewController{
+                contentController.bgColor = adjustColor(aColor: bgColor!, by: 30.0)
+            }
+        }
+    }
+    
     func adjustColor(aColor: UIColor,by percentage: CGFloat = 30.0 ) -> UIColor? {
         var r:CGFloat=0, g:CGFloat=0, b:CGFloat=0, a:CGFloat=0;
         if(aColor.getRed(&r, green: &g, blue: &b, alpha: &a)){
@@ -50,6 +55,7 @@ class DetailConceptViewController: UIViewController {
             return nil
         }
     }
+    
     
     /*
     // MARK: - Navigation

@@ -49,7 +49,6 @@ class MenuTableViewController: UITableViewController {
                 //let icon = UIImage(named: aCell.image )
                 let aColor =  UIColor(red: aCell.color[0]/255 , green: aCell.color[1]/255 , blue: aCell.color[2]/255 , alpha: aCell.color[3])
                 let cell = MenuCell(id: aCell.id,name:  aCell.name, photo: UIImage(named: aCell.image), color: aColor)
-               print(cell)
                 elements.append(cell)
             }
         }
@@ -63,7 +62,6 @@ class MenuTableViewController: UITableViewController {
             }
             return false
         }
-        print(elements)
     }
     
     override func viewDidLoad() {

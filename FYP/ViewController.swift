@@ -16,8 +16,7 @@ class ViewController: UIViewController {
             print("Landscape")
              homeScreen.image = #imageLiteral(resourceName: "FYP_Main_Horizontal")
         }
-        
-        if UIDeviceOrientationIsPortrait(UIDevice.current.orientation) {
+        else if UIDeviceOrientationIsPortrait(UIDevice.current.orientation) {
             print("Portrait")
             homeScreen.image = #imageLiteral(resourceName: "FYP_Main_Vertical")
         }
@@ -36,11 +35,13 @@ class ViewController: UIViewController {
             print("Landscape")
             homeScreen.image = #imageLiteral(resourceName: "FYP_Main_Horizontal")
             
-        } else {
+        }
+        else {
             print("Portrait")
             homeScreen.image = #imageLiteral(resourceName: "FYP_Main_Vertical")
         }
     }
+   
 
 }
 
