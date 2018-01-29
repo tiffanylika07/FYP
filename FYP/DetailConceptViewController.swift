@@ -16,6 +16,8 @@ class DetailConceptViewController: UIViewController {
     
     @IBOutlet weak var buttonView: UIView!
     
+    @IBOutlet var btnTouchRecognizer: UITapGestureRecognizer!
+    
     var selectedCellName = ""
     var selectedCellID = 0
     var bgColor: UIColor?
@@ -28,6 +30,8 @@ class DetailConceptViewController: UIViewController {
         titleView.backgroundColor = bgColor
         //titleView.layer.cornerRadius = 10.00
         containerView.backgroundColor = adjustColor(aColor: bgColor!,by: 30.0)
+        buttonView.isUserInteractionEnabled = true
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,11 +41,15 @@ class DetailConceptViewController: UIViewController {
     
     //segueToContent
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segueToContent" {
-            if let contentController = segue.destination as? ContentViewController{
-                contentController.bgColor = adjustColor(aColor: bgColor!, by: 30.0)
-            }
-        }
+    
+//            if let contentController = segue.destination as? ContentViewController{
+//                contentController.bgColor = adjustColor(aColor: bgColor!, by: 30.0)
+//            }
+    }
+
+    
+    func buttonTapper(recognizer: UITapGestureRecognizer){
+        print("Taooed")
     }
     
     func adjustColor(aColor: UIColor,by percentage: CGFloat = 30.0 ) -> UIColor? {

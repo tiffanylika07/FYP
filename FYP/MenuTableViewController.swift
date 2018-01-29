@@ -138,10 +138,24 @@ class MenuTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //Show Detail concept with different segue
-        let identifier = "showConcept" + String(indexPath.row + 1)
-        print(identifier)
-            //performSegue(withIdentifier: identifier, sender: elements[indexPath.row])
-            performSegue(withIdentifier: "showConcept1", sender: elements[indexPath.row])
+        print(elements[indexPath.row].id)
+        switch(elements[indexPath.row].id){
+            case "1":
+                 performSegue(withIdentifier: "showConcept_Area", sender: elements[indexPath.row])
+            case "2":
+                performSegue(withIdentifier: "showConcept_Addition", sender: elements[indexPath.row])
+            case "3":
+                performSegue(withIdentifier: "showConcept_Algebra", sender: elements[indexPath.row])
+            case "4":
+                performSegue(withIdentifier: "showConcept_Area", sender: elements[indexPath.row])
+            case "5":
+                performSegue(withIdentifier: "showConcept_Time", sender: elements[indexPath.row])
+            case "6":
+            performSegue(withIdentifier: "showConcept_Fraction", sender: elements[indexPath.row])
+            default:
+                    print("Error")
+        }
+        
     }
 
 

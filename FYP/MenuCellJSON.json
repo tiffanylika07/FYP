@@ -6,7 +6,7 @@
       "image": "icon_1"
     },
     {
-      "name": "Direction and Scale Drawing",
+      "name": "Addition, Subtraction, Multiplication and Division",
       "id": "2",
       "color": [255,77,136,1],
       "image": "icon_direction"
@@ -18,7 +18,7 @@
       "image": "icon_algebra"
     },
     {
-      "name": "Shape and Symmetry",
+      "name": "",
       "id": "4",
       "color": [92,214,92,1],
       "image": "icon_shape"
