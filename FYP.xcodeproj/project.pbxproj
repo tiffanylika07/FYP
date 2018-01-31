@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C83A016B2007D74700EE6DBA /* Puzzle_1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83A016A2007D74700EE6DBA /* Puzzle_1_ViewController.swift */; };
+		C8251AA32020A652001F3DFB /* PuzzleMenuJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = C8251AA22020A652001F3DFB /* PuzzleMenuJSON.json */; };
+		C8251AA72020A826001F3DFB /* PuzzleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8251AA62020A826001F3DFB /* PuzzleTableViewController.swift */; };
+		C8251AA92020AC54001F3DFB /* PuzzleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8251AA82020AC54001F3DFB /* PuzzleTableViewCell.swift */; };
 		C83A01732017A08A00EE6DBA /* DetailConceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83A01722017A08A00EE6DBA /* DetailConceptViewController.swift */; };
 		C83A01772018E44D00EE6DBA /* Neucha.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C83A01762018E44D00EE6DBA /* Neucha.ttf */; };
 		C83A017B201A317F00EE6DBA /* MenuCellJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = C83A017A201A317F00EE6DBA /* MenuCellJSON.json */; };
 		C83A017F201B9C6700EE6DBA /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83A017E201B9C6700EE6DBA /* ContentViewController.swift */; };
-		C83A0181201F92C700EE6DBA /* FractionPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83A0180201F92C700EE6DBA /* FractionPuzzleViewController.swift */; };
 		C85059051FFD204A00A8367E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85059041FFD204A00A8367E /* AppDelegate.swift */; };
-		C85059071FFD204A00A8367E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85059061FFD204A00A8367E /* ViewController.swift */; };
 		C850590A1FFD204A00A8367E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85059081FFD204A00A8367E /* Main.storyboard */; };
 		C850590C1FFD204A00A8367E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C850590B1FFD204A00A8367E /* Assets.xcassets */; };
 		C850590F1FFD204A00A8367E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C850590D1FFD204A00A8367E /* LaunchScreen.storyboard */; };
@@ -23,6 +23,9 @@
 		C8A3CB23201F97F00072FE7C /* FractionPuzzleQuestion.json in Resources */ = {isa = PBXBuildFile; fileRef = C8A3CB22201F97EF0072FE7C /* FractionPuzzleQuestion.json */; };
 		C8B0AF7B20010DA700ABBAFD /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0AF7A20010DA700ABBAFD /* MenuTableViewCell.swift */; };
 		C8B0AF7F2001194E00ABBAFD /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0AF7E2001194E00ABBAFD /* MenuTableViewController.swift */; };
+		C8F6A9282020F40D006CFFA4 /* MatchPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F6A9272020F40D006CFFA4 /* MatchPuzzleViewController.swift */; };
+		C8F6A92A202211F6006CFFA4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F6A929202211F6006CFFA4 /* HomeViewController.swift */; };
+		C8FAB0DA2020B0B80072E1BB /* FractionPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FAB0D92020B0B80072E1BB /* FractionPuzzleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,15 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C83A016A2007D74700EE6DBA /* Puzzle_1_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle_1_ViewController.swift; sourceTree = "<group>"; };
+		C8251AA22020A652001F3DFB /* PuzzleMenuJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PuzzleMenuJSON.json; sourceTree = "<group>"; };
+		C8251AA62020A826001F3DFB /* PuzzleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleTableViewController.swift; sourceTree = "<group>"; };
+		C8251AA82020AC54001F3DFB /* PuzzleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleTableViewCell.swift; sourceTree = "<group>"; };
 		C83A01722017A08A00EE6DBA /* DetailConceptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConceptViewController.swift; sourceTree = "<group>"; };
 		C83A01762018E44D00EE6DBA /* Neucha.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Neucha.ttf; sourceTree = "<group>"; };
 		C83A017A201A317F00EE6DBA /* MenuCellJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MenuCellJSON.json; sourceTree = "<group>"; };
 		C83A017E201B9C6700EE6DBA /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
-		C83A0180201F92C700EE6DBA /* FractionPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractionPuzzleViewController.swift; sourceTree = "<group>"; };
 		C85059011FFD204A00A8367E /* FYP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85059041FFD204A00A8367E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C85059061FFD204A00A8367E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C85059091FFD204A00A8367E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C850590B1FFD204A00A8367E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C850590E1FFD204A00A8367E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +68,9 @@
 		C8A3CB22201F97EF0072FE7C /* FractionPuzzleQuestion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FractionPuzzleQuestion.json; sourceTree = "<group>"; };
 		C8B0AF7A20010DA700ABBAFD /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		C8B0AF7E2001194E00ABBAFD /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		C8F6A9272020F40D006CFFA4 /* MatchPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchPuzzleViewController.swift; sourceTree = "<group>"; };
+		C8F6A929202211F6006CFFA4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C8FAB0D92020B0B80072E1BB /* FractionPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractionPuzzleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,21 +121,24 @@
 		C85059031FFD204A00A8367E /* FYP */ = {
 			isa = PBXGroup;
 			children = (
+				C8A3CB22201F97EF0072FE7C /* FractionPuzzleQuestion.json */,
+				C83A017A201A317F00EE6DBA /* MenuCellJSON.json */,
+				C8251AA22020A652001F3DFB /* PuzzleMenuJSON.json */,
+				C85059101FFD204A00A8367E /* Info.plist */,
 				C85059041FFD204A00A8367E /* AppDelegate.swift */,
 				C83A017E201B9C6700EE6DBA /* ContentViewController.swift */,
 				C83A01722017A08A00EE6DBA /* DetailConceptViewController.swift */,
-				C85059061FFD204A00A8367E /* ViewController.swift */,
-				C8B0AF7E2001194E00ABBAFD /* MenuTableViewController.swift */,
-				C85059081FFD204A00A8367E /* Main.storyboard */,
-				C83A016A2007D74700EE6DBA /* Puzzle_1_ViewController.swift */,
-				C850590B1FFD204A00A8367E /* Assets.xcassets */,
-				C83A0180201F92C700EE6DBA /* FractionPuzzleViewController.swift */,
-				C850590D1FFD204A00A8367E /* LaunchScreen.storyboard */,
+				C8FAB0D92020B0B80072E1BB /* FractionPuzzleViewController.swift */,
+				C8F6A929202211F6006CFFA4 /* HomeViewController.swift */,
+				C8F6A9272020F40D006CFFA4 /* MatchPuzzleViewController.swift */,
 				C8B0AF7A20010DA700ABBAFD /* MenuTableViewCell.swift */,
-				C85059101FFD204A00A8367E /* Info.plist */,
+				C8B0AF7E2001194E00ABBAFD /* MenuTableViewController.swift */,
+				C8251AA82020AC54001F3DFB /* PuzzleTableViewCell.swift */,
+				C8251AA62020A826001F3DFB /* PuzzleTableViewController.swift */,
 				C83A01762018E44D00EE6DBA /* Neucha.ttf */,
-				C8A3CB22201F97EF0072FE7C /* FractionPuzzleQuestion.json */,
-				C83A017A201A317F00EE6DBA /* MenuCellJSON.json */,
+				C850590B1FFD204A00A8367E /* Assets.xcassets */,
+				C850590D1FFD204A00A8367E /* LaunchScreen.storyboard */,
+				C85059081FFD204A00A8367E /* Main.storyboard */,
 			);
 			path = FYP;
 			sourceTree = "<group>";
@@ -221,15 +230,18 @@
 					C85059001FFD204A00A8367E = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = J5A4F4887H;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					C85059141FFD204A00A8367E = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = C85059001FFD204A00A8367E;
 					};
 					C850591F1FFD204A00A8367E = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = C85059001FFD204A00A8367E;
 					};
@@ -262,6 +274,7 @@
 			files = (
 				C83A017B201A317F00EE6DBA /* MenuCellJSON.json in Resources */,
 				C850590F1FFD204A00A8367E /* LaunchScreen.storyboard in Resources */,
+				C8251AA32020A652001F3DFB /* PuzzleMenuJSON.json in Resources */,
 				C850590C1FFD204A00A8367E /* Assets.xcassets in Resources */,
 				C8A3CB23201F97F00072FE7C /* FractionPuzzleQuestion.json in Resources */,
 				C83A01772018E44D00EE6DBA /* Neucha.ttf in Resources */,
@@ -290,14 +303,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C85059071FFD204A00A8367E /* ViewController.swift in Sources */,
 				C85059051FFD204A00A8367E /* AppDelegate.swift in Sources */,
+				C8FAB0DA2020B0B80072E1BB /* FractionPuzzleViewController.swift in Sources */,
 				C8B0AF7F2001194E00ABBAFD /* MenuTableViewController.swift in Sources */,
-				C83A016B2007D74700EE6DBA /* Puzzle_1_ViewController.swift in Sources */,
-				C83A0181201F92C700EE6DBA /* FractionPuzzleViewController.swift in Sources */,
+				C8251AA72020A826001F3DFB /* PuzzleTableViewController.swift in Sources */,
 				C83A01732017A08A00EE6DBA /* DetailConceptViewController.swift in Sources */,
+				C8F6A9282020F40D006CFFA4 /* MatchPuzzleViewController.swift in Sources */,
+				C8251AA92020AC54001F3DFB /* PuzzleTableViewCell.swift in Sources */,
 				C8B0AF7B20010DA700ABBAFD /* MenuTableViewCell.swift in Sources */,
 				C83A017F201B9C6700EE6DBA /* ContentViewController.swift in Sources */,
+				C8F6A92A202211F6006CFFA4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,7 +482,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TiffanyLi.FYP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -481,7 +497,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TiffanyLi.FYP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -494,7 +511,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TiffanyLi.FYPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FYP.app/FYP";
 			};
 			name = Debug;
@@ -508,7 +526,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TiffanyLi.FYPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FYP.app/FYP";
 			};
 			name = Release;
@@ -521,7 +540,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TiffanyLi.FYPUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = FYP;
 			};
 			name = Debug;
@@ -534,7 +554,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TiffanyLi.FYPUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = FYP;
 			};
 			name = Release;

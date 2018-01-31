@@ -13,8 +13,7 @@ class DetailConceptViewController: UIViewController {
     
     @IBOutlet weak var titleView: UIView!
     @IBOutlet weak var containerView: UIView!
-    
-    @IBOutlet weak var buttonView: UIView!
+
     
     @IBOutlet var btnTouchRecognizer: UITapGestureRecognizer!
     
@@ -30,7 +29,6 @@ class DetailConceptViewController: UIViewController {
         titleView.backgroundColor = bgColor
         //titleView.layer.cornerRadius = 10.00
         containerView.backgroundColor = adjustColor(aColor: bgColor!,by: 30.0)
-        buttonView.isUserInteractionEnabled = true
 
     }
 

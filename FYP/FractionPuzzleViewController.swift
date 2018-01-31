@@ -8,26 +8,48 @@
 
 import UIKit
 
+struct question : Decodable{
+    var distance: String
+    var answer: [String]
+    var others: [String]
+}
+
+class questionCell {
+    var image : UIImage?
+    var value : Double = 0.0
+}
 class FractionPuzzleViewController: UIViewController {
 
+    @IBOutlet weak var DescriptionBoxView: UIView!
+    @IBOutlet weak var PuzzleAreaView: UIView!
+    @IBOutlet weak var PuzzleTitle: UILabel!
+    
+    @IBOutlet weak var DescriptionView: UITextView!
+    
+    var descriptionBoxBGColor: UIColor?
+    var descriptionBGColor: UIColor?
     override func viewDidLoad() {
         super.viewDidLoad()
         generateQuestion()
-        // Do any additional setup after loading the view.
+        InitializeView()
     }
-
+    
+    func InitializeView(){
+        DescriptionBoxView.layer.borderColor = UIColor.black.cgColor
+        //DescriptionBoxView.layer.borderWidth = 1
+        DescriptionBoxView.layer.cornerRadius = 20
+        DescriptionView.layer.cornerRadius = 20
+        DescriptionView.isEditable = false
+        DescriptionBoxView.backgroundColor = descriptionBoxBGColor
+        DescriptionView.backgroundColor = descriptionBGColor
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    struct question : Decodable{
-        var distance: String
-        var answer: [String]
-        var others: [String]
-    }
-    
 
+    
     func generateQuestion(){
         let path = Bundle.main.path(forResource: "FractionPuzzleQuestion", ofType: "json")
         let url = URL(fileURLWithPath: path!)
@@ -40,9 +62,7 @@ class FractionPuzzleViewController: UIViewController {
                 print("Distance")
                 print(StringToFloat(aString: question.distance))
                 for (i, ans) in question.answer.enumerated(){
-                    print(String(i)+": ")
-                    print(StringToFloat(aString: ans))
-                    print(",")
+                    print(String(i+1)+": ",StringToFloat(aString: ans))
                 }
             }
         }
@@ -68,20 +88,13 @@ class FractionPuzzleViewController: UIViewController {
     
     func StringToFloat(aString : String) -> Float{
         
-            var comps = aString.components(separatedBy: "/")
-            var op1 = NSString(string: comps[0]).floatValue
-            var op2 = NSString(string: comps[1]).floatValue
-            
-            return op1/op2
+        var comps = aString.components(separatedBy: "/")
+        var op1 = NSString(string: comps[0]).floatValue
+        var op2 = NSString(string: comps[1]).floatValue
+        
+        return op1/op2
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
+    
 
 }

@@ -14,19 +14,32 @@ class ContentViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var mainView: UIView!
     
+    @IBOutlet weak var PuzzleButton: UIImageView!
     var bgColor : UIColor?
     override func viewDidLoad() {
         super.viewDidLoad()
         contentView.backgroundColor = bgColor
         mainView.backgroundColor = bgColor
-        // Do any additional setup after loading the view.
+       
+        let tapGesture_P = UITapGestureRecognizer(target: self, action: #selector(tapAction(sender:)))
+        
+        tapGesture_P.numberOfTapsRequired = 1
+        tapGesture_P.numberOfTouchesRequired = 1
+        PuzzleButton.isUserInteractionEnabled = true
+        PuzzleButton.addGestureRecognizer(tapGesture_P)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    @objc func tapAction(sender:UITapGestureRecognizer){
+        //        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "PuzzleTableViewID") as! PuzzleTableViewController
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+        
+    }
 
     /*
     // MARK: - Navigation
