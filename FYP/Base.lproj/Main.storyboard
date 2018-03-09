@@ -643,7 +643,7 @@
                                                 <state key="normal" title="Button" image="Hint"/>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="rzt-Pi-CP5">
-                                                <rect key="frame" x="30" y="0.0" width="314" height="109.33333333333333"/>
+                                                <rect key="frame" x="45" y="0.0" width="284" height="109.33333333333333"/>
                                                 <subviews>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0A-EO-dxO">
                                                         <rect key="frame" x="0.0" y="0.0" width="35" height="109.33333333333333"/>
@@ -652,13 +652,13 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="915-ua-TTh">
-                                                        <rect key="frame" x="139.66666666666666" y="0.0" width="35" height="109.33333333333333"/>
+                                                        <rect key="frame" x="124.66666666666666" y="0.0" width="35" height="109.33333333333333"/>
                                                         <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="70"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzE-VO-MyE">
-                                                        <rect key="frame" x="279" y="0.0" width="35" height="109.33333333333333"/>
+                                                        <rect key="frame" x="249" y="0.0" width="35" height="109.33333333333333"/>
                                                         <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="70"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -671,7 +671,7 @@
                                             <constraint firstItem="OJr-i5-aMQ" firstAttribute="height" relation="lessThanOrEqual" secondItem="lmO-rK-QAI" secondAttribute="height" multiplier="0.35" id="4bU-bf-lte"/>
                                             <constraint firstItem="Oul-65-Ih4" firstAttribute="leading" secondItem="lmO-rK-QAI" secondAttribute="centerX" id="K8c-lN-CwP"/>
                                             <constraint firstAttribute="trailing" secondItem="Oul-65-Ih4" secondAttribute="trailing" constant="10" id="N0R-gI-QoI"/>
-                                            <constraint firstItem="rzt-Pi-CP5" firstAttribute="leading" secondItem="lmO-rK-QAI" secondAttribute="leading" constant="30" id="OmH-XQ-HfD"/>
+                                            <constraint firstItem="rzt-Pi-CP5" firstAttribute="leading" secondItem="lmO-rK-QAI" secondAttribute="leading" constant="45" id="OmH-XQ-HfD"/>
                                             <constraint firstItem="rzt-Pi-CP5" firstAttribute="top" secondItem="lmO-rK-QAI" secondAttribute="top" id="XGX-NI-Y8a"/>
                                             <constraint firstItem="OJr-i5-aMQ" firstAttribute="leading" secondItem="lmO-rK-QAI" secondAttribute="leading" constant="10" id="aZ0-Mg-Tbz"/>
                                             <constraint firstItem="Oul-65-Ih4" firstAttribute="leading" secondItem="OJr-i5-aMQ" secondAttribute="trailing" constant="10" id="dat-uH-Mxr"/>
@@ -679,7 +679,7 @@
                                             <constraint firstAttribute="bottomMargin" secondItem="Oul-65-Ih4" secondAttribute="bottom" id="kdH-Xo-2t0"/>
                                             <constraint firstItem="rzt-Pi-CP5" firstAttribute="height" secondItem="lmO-rK-QAI" secondAttribute="height" multiplier="0.6" id="krr-wA-4Qr"/>
                                             <constraint firstItem="Oul-65-Ih4" firstAttribute="height" secondItem="lmO-rK-QAI" secondAttribute="height" multiplier="0.35" id="yX9-sD-D6s"/>
-                                            <constraint firstAttribute="trailing" secondItem="rzt-Pi-CP5" secondAttribute="trailing" constant="30" id="yZz-20-dQs"/>
+                                            <constraint firstAttribute="trailing" secondItem="rzt-Pi-CP5" secondAttribute="trailing" constant="45" id="yZz-20-dQs"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24b-7p-nEn">

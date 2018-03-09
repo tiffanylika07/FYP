@@ -19,7 +19,8 @@ extension UIView{
 }
 
 class MakeItZeroViewController: UIViewController{
-
+    
+    var question_ID = 0
 
     //Description Box
     @IBOutlet weak var DescriptionBoxView: UIView!
@@ -64,6 +65,7 @@ class MakeItZeroViewController: UIViewController{
     var num_C : Int!
     var num_D : Int!
     
+    var ques : question!
     override func viewDidLoad() {
         super.viewDidLoad()
         LoadQuestionData()
@@ -122,32 +124,24 @@ class MakeItZeroViewController: UIViewController{
         ori_location_C = number_III.center
         length_H = boardView.frame.size.width
         length_V = boardView.frame.size.height
-        print("Location_A", " x: ",location_A.x,"y: ",location_A.y)
-        print("Location_B", " x: ",location_B.x,"y: ",location_B.y)
-        print("Location_C", " x: ",location_C.x,"y: ",location_C.y)
-        print("Location_D", " x: ",location_D.x,"y: ",location_D.y)
-        
-        print("numB", num_A)
-        print("numB", num_B)
-        print("numB", num_C)
-        print("numB", num_D)
-        
-      
     }
     
     struct question : Decodable{
         var initial: [String]
         var nextNum: [Int]
         var hint: String
+        var id: Int
     }
     
     func LoadQuestionData(){
+       
         let path = Bundle.main.path(forResource: "MakeItZeroJSON", ofType: "json")
         let url = URL(fileURLWithPath: path!)
         do{
             let data = try Data(contentsOf:url)
             let questionList = try JSONDecoder().decode([question].self, from: data)
             print("GET")
+            ques = questionList[question_ID]
             for q in questionList{
                 if(!q.initial.isEmpty){
                     for point in q.initial{
@@ -231,10 +225,19 @@ class MakeItZeroViewController: UIViewController{
     }
     
     func reloadPage(){
-        print("REload")
-        PuzzleAreaView.removeFromSuperview()
-        self.view.addSubview(PuzzleAreaView)
-        InitializeView()
+        label_A.text = "0"
+        label_B.text = "0"
+        label_C.text = "0"
+        label_D.text = "0"
+        LoadQuestionData()
+        number_I.isHidden = false
+        number_II.isHidden = false
+        number_III.isHidden = false
+        
+        num_A = Int(label_A.text!)!
+        num_B = Int(label_B.text!)!
+        num_C = Int(label_C.text!)!
+        num_D = Int(label_D.text!)!
     }
     func clearBoard(){
         for frame in boardView.subviews{
