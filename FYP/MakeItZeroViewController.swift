@@ -232,7 +232,9 @@ class MakeItZeroViewController: UIViewController{
     
     func reloadPage(){
         print("REload")
-        navigationController?.popToViewController(self, animated: true)
+        PuzzleAreaView.removeFromSuperview()
+        self.view.addSubview(PuzzleAreaView)
+        InitializeView()
     }
     func clearBoard(){
         for frame in boardView.subviews{

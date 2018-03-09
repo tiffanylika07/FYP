@@ -11,9 +11,12 @@ import UIKit
 class ZeroDemoPopUpViewController: UIViewController {
 
     @IBOutlet weak var closeButton: UIButton!
+    
+    @IBOutlet weak var demoGifView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        demoGifView.loadGif(name: "wtf")
         // Do any additional setup after loading the view.
     }
 

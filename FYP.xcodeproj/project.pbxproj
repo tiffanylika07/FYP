@@ -16,6 +16,8 @@
 		C83A01772018E44D00EE6DBA /* Neucha.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C83A01762018E44D00EE6DBA /* Neucha.ttf */; };
 		C83A017B201A317F00EE6DBA /* MenuCellJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = C83A017A201A317F00EE6DBA /* MenuCellJSON.json */; };
 		C83A017F201B9C6700EE6DBA /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83A017E201B9C6700EE6DBA /* ContentViewController.swift */; };
+		C84270AE2052DC7300CEB285 /* GifControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84270AD2052DC7300CEB285 /* GifControl.swift */; };
+		C84270B02052DCC400CEB285 /* wtf.gif in Resources */ = {isa = PBXBuildFile; fileRef = C84270AF2052DCC400CEB285 /* wtf.gif */; };
 		C85059051FFD204A00A8367E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85059041FFD204A00A8367E /* AppDelegate.swift */; };
 		C850590A1FFD204A00A8367E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85059081FFD204A00A8367E /* Main.storyboard */; };
 		C850590C1FFD204A00A8367E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C850590B1FFD204A00A8367E /* Assets.xcassets */; };
@@ -59,6 +61,8 @@
 		C83A01762018E44D00EE6DBA /* Neucha.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Neucha.ttf; sourceTree = "<group>"; };
 		C83A017A201A317F00EE6DBA /* MenuCellJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MenuCellJSON.json; sourceTree = "<group>"; };
 		C83A017E201B9C6700EE6DBA /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		C84270AD2052DC7300CEB285 /* GifControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifControl.swift; sourceTree = "<group>"; };
+		C84270AF2052DCC400CEB285 /* wtf.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wtf.gif; sourceTree = "<group>"; };
 		C85059011FFD204A00A8367E /* FYP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85059041FFD204A00A8367E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C85059091FFD204A00A8367E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -144,7 +148,9 @@
 				C8251AA82020AC54001F3DFB /* PuzzleTableViewCell.swift */,
 				C8251AA62020A826001F3DFB /* PuzzleTableViewController.swift */,
 				C82535C3202605C80006E3A2 /* MakeItZeroViewController.swift */,
+				C84270AD2052DC7300CEB285 /* GifControl.swift */,
 				C86B03CF20262DFF0020535E /* BoardCollectionViewCell.swift */,
+				C84270AF2052DCC400CEB285 /* wtf.gif */,
 				C83A01762018E44D00EE6DBA /* Neucha.ttf */,
 				C850590B1FFD204A00A8367E /* Assets.xcassets */,
 				C850590D1FFD204A00A8367E /* LaunchScreen.storyboard */,
@@ -288,6 +294,7 @@
 				C850590F1FFD204A00A8367E /* LaunchScreen.storyboard in Resources */,
 				C8251AA32020A652001F3DFB /* PuzzleMenuJSON.json in Resources */,
 				C850590C1FFD204A00A8367E /* Assets.xcassets in Resources */,
+				C84270B02052DCC400CEB285 /* wtf.gif in Resources */,
 				C8A3CB23201F97F00072FE7C /* MakeItZeroJSON.json in Resources */,
 				C83A01772018E44D00EE6DBA /* Neucha.ttf in Resources */,
 				C850590A1FFD204A00A8367E /* Main.storyboard in Resources */,
@@ -319,6 +326,7 @@
 				C86B03D020262DFF0020535E /* BoardCollectionViewCell.swift in Sources */,
 				C8FAB0DA2020B0B80072E1BB /* FractionPuzzleViewController.swift in Sources */,
 				C8B0AF7F2001194E00ABBAFD /* MenuTableViewController.swift in Sources */,
+				C84270AE2052DC7300CEB285 /* GifControl.swift in Sources */,
 				C8251AA72020A826001F3DFB /* PuzzleTableViewController.swift in Sources */,
 				C86B03CE20261A3F0020535E /* ZeroDemoPopUpViewController.swift in Sources */,
 				C83A01732017A08A00EE6DBA /* DetailConceptViewController.swift in Sources */,
