@@ -13,20 +13,18 @@ class ContentViewController: UIViewController {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var mainView: UIView!
-    
-    @IBOutlet weak var PuzzleButton: UIImageView!
     var bgColor : UIColor?
     override func viewDidLoad() {
         super.viewDidLoad()
         contentView.backgroundColor = bgColor
         mainView.backgroundColor = bgColor
-       
+        scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: 780)
         let tapGesture_P = UITapGestureRecognizer(target: self, action: #selector(tapAction(sender:)))
-        
         tapGesture_P.numberOfTapsRequired = 1
         tapGesture_P.numberOfTouchesRequired = 1
-        PuzzleButton.isUserInteractionEnabled = true
-        PuzzleButton.addGestureRecognizer(tapGesture_P)
+        self.view.addSubview(scrollView)
+//        playPuzzleBtn.isUserInteractionEnabled = true
+//        playPuzzleBtn.addGestureRecognizer(tapGesture_P)
     }
 
     override func didReceiveMemoryWarning() {

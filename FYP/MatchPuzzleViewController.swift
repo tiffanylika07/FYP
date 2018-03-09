@@ -39,6 +39,8 @@ class MatchPuzzleViewController: UIViewController {
     
     @IBOutlet weak var SubmitButton: UIImageView!
     
+    var descriptionBoxBGColor : UIColor?
+    var descriptionBGColor : UIColor?
     override func viewDidLoad() {
         super.viewDidLoad()
         InitializeView()
@@ -54,9 +56,15 @@ class MatchPuzzleViewController: UIViewController {
         let panGesture = UIPanGestureRecognizer(target: self, action:  #selector(wasDragged(_:)))
         match_1.isUserInteractionEnabled = true
         match_1.addGestureRecognizer(panGesture)
-        //match_1.addGestureRecognizer(tapGesture)
         
         
+        DescriptionBoxView.layer.borderColor = UIColor.black.cgColor
+        //DescriptionBoxView.layer.borderWidth = 1
+        DescriptionBoxView.layer.cornerRadius = 20
+        DescriptionView.layer.cornerRadius = 20
+        DescriptionView.isEditable = false
+        DescriptionBoxView.backgroundColor = descriptionBoxBGColor
+        DescriptionView.backgroundColor = descriptionBGColor
 
     }
     override func didReceiveMemoryWarning() {
@@ -78,13 +86,16 @@ class MatchPuzzleViewController: UIViewController {
         print("Submit is Tapped")
         let alertView = UIAlertController(title: "Correct!", message: "Congradualations! You're correct!", preferredStyle: UIAlertControllerStyle.alert)
         
-        let cancel = UIAlertAction(title: "Done", style: .default)
-        let next = UIAlertAction(title: "Next", style: .default, handler: nil)
-        
+        let cancel = UIAlertAction(title: "Cancel", style: .destructive)
+        let next = UIAlertAction(title: "Next", style: .default, handler: goToNextQuestion)
         alertView.addAction(cancel)
         alertView.addAction(next)
         
         present(alertView, animated: true, completion: nil)
+    }
+    func goToNextQuestion(alert: UIAlertAction!) {
+       // performSegue(withIdentifier: "nextQuestion", sender: self)
+        print("Pressed Next")
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let backItem = UIBarButtonItem()

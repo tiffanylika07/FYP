@@ -10,6 +10,8 @@
 		C8251AA32020A652001F3DFB /* PuzzleMenuJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = C8251AA22020A652001F3DFB /* PuzzleMenuJSON.json */; };
 		C8251AA72020A826001F3DFB /* PuzzleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8251AA62020A826001F3DFB /* PuzzleTableViewController.swift */; };
 		C8251AA92020AC54001F3DFB /* PuzzleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8251AA82020AC54001F3DFB /* PuzzleTableViewCell.swift */; };
+		C82535C22025F2CD0006E3A2 /* TableViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82535C12025F2CD0006E3A2 /* TableViewTest.swift */; };
+		C82535C4202605C80006E3A2 /* MakeItZeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82535C3202605C80006E3A2 /* MakeItZeroViewController.swift */; };
 		C83A01732017A08A00EE6DBA /* DetailConceptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83A01722017A08A00EE6DBA /* DetailConceptViewController.swift */; };
 		C83A01772018E44D00EE6DBA /* Neucha.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C83A01762018E44D00EE6DBA /* Neucha.ttf */; };
 		C83A017B201A317F00EE6DBA /* MenuCellJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = C83A017A201A317F00EE6DBA /* MenuCellJSON.json */; };
@@ -20,7 +22,9 @@
 		C850590F1FFD204A00A8367E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C850590D1FFD204A00A8367E /* LaunchScreen.storyboard */; };
 		C850591A1FFD204A00A8367E /* FYPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85059191FFD204A00A8367E /* FYPTests.swift */; };
 		C85059251FFD204A00A8367E /* FYPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85059241FFD204A00A8367E /* FYPUITests.swift */; };
-		C8A3CB23201F97F00072FE7C /* FractionPuzzleQuestion.json in Resources */ = {isa = PBXBuildFile; fileRef = C8A3CB22201F97EF0072FE7C /* FractionPuzzleQuestion.json */; };
+		C86B03CE20261A3F0020535E /* ZeroDemoPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B03CD20261A3F0020535E /* ZeroDemoPopUpViewController.swift */; };
+		C86B03D020262DFF0020535E /* BoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B03CF20262DFF0020535E /* BoardCollectionViewCell.swift */; };
+		C8A3CB23201F97F00072FE7C /* MakeItZeroJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = C8A3CB22201F97EF0072FE7C /* MakeItZeroJSON.json */; };
 		C8B0AF7B20010DA700ABBAFD /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0AF7A20010DA700ABBAFD /* MenuTableViewCell.swift */; };
 		C8B0AF7F2001194E00ABBAFD /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0AF7E2001194E00ABBAFD /* MenuTableViewController.swift */; };
 		C8F6A9282020F40D006CFFA4 /* MatchPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F6A9272020F40D006CFFA4 /* MatchPuzzleViewController.swift */; };
@@ -49,6 +53,8 @@
 		C8251AA22020A652001F3DFB /* PuzzleMenuJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PuzzleMenuJSON.json; sourceTree = "<group>"; };
 		C8251AA62020A826001F3DFB /* PuzzleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleTableViewController.swift; sourceTree = "<group>"; };
 		C8251AA82020AC54001F3DFB /* PuzzleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleTableViewCell.swift; sourceTree = "<group>"; };
+		C82535C12025F2CD0006E3A2 /* TableViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTest.swift; sourceTree = "<group>"; };
+		C82535C3202605C80006E3A2 /* MakeItZeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItZeroViewController.swift; sourceTree = "<group>"; };
 		C83A01722017A08A00EE6DBA /* DetailConceptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConceptViewController.swift; sourceTree = "<group>"; };
 		C83A01762018E44D00EE6DBA /* Neucha.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Neucha.ttf; sourceTree = "<group>"; };
 		C83A017A201A317F00EE6DBA /* MenuCellJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MenuCellJSON.json; sourceTree = "<group>"; };
@@ -65,7 +71,9 @@
 		C85059201FFD204A00A8367E /* FYPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FYPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85059241FFD204A00A8367E /* FYPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYPUITests.swift; sourceTree = "<group>"; };
 		C85059261FFD204A00A8367E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C8A3CB22201F97EF0072FE7C /* FractionPuzzleQuestion.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FractionPuzzleQuestion.json; sourceTree = "<group>"; };
+		C86B03CD20261A3F0020535E /* ZeroDemoPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroDemoPopUpViewController.swift; sourceTree = "<group>"; };
+		C86B03CF20262DFF0020535E /* BoardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCollectionViewCell.swift; sourceTree = "<group>"; };
+		C8A3CB22201F97EF0072FE7C /* MakeItZeroJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MakeItZeroJSON.json; sourceTree = "<group>"; };
 		C8B0AF7A20010DA700ABBAFD /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		C8B0AF7E2001194E00ABBAFD /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		C8F6A9272020F40D006CFFA4 /* MatchPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchPuzzleViewController.swift; sourceTree = "<group>"; };
@@ -121,7 +129,7 @@
 		C85059031FFD204A00A8367E /* FYP */ = {
 			isa = PBXGroup;
 			children = (
-				C8A3CB22201F97EF0072FE7C /* FractionPuzzleQuestion.json */,
+				C8A3CB22201F97EF0072FE7C /* MakeItZeroJSON.json */,
 				C83A017A201A317F00EE6DBA /* MenuCellJSON.json */,
 				C8251AA22020A652001F3DFB /* PuzzleMenuJSON.json */,
 				C85059101FFD204A00A8367E /* Info.plist */,
@@ -135,10 +143,13 @@
 				C8B0AF7E2001194E00ABBAFD /* MenuTableViewController.swift */,
 				C8251AA82020AC54001F3DFB /* PuzzleTableViewCell.swift */,
 				C8251AA62020A826001F3DFB /* PuzzleTableViewController.swift */,
+				C82535C3202605C80006E3A2 /* MakeItZeroViewController.swift */,
+				C86B03CF20262DFF0020535E /* BoardCollectionViewCell.swift */,
 				C83A01762018E44D00EE6DBA /* Neucha.ttf */,
 				C850590B1FFD204A00A8367E /* Assets.xcassets */,
 				C850590D1FFD204A00A8367E /* LaunchScreen.storyboard */,
 				C85059081FFD204A00A8367E /* Main.storyboard */,
+				C86B03CD20261A3F0020535E /* ZeroDemoPopUpViewController.swift */,
 			);
 			path = FYP;
 			sourceTree = "<group>";
@@ -147,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				C85059191FFD204A00A8367E /* FYPTests.swift */,
+				C82535C12025F2CD0006E3A2 /* TableViewTest.swift */,
 				C850591B1FFD204A00A8367E /* Info.plist */,
 			);
 			path = FYPTests;
@@ -276,7 +288,7 @@
 				C850590F1FFD204A00A8367E /* LaunchScreen.storyboard in Resources */,
 				C8251AA32020A652001F3DFB /* PuzzleMenuJSON.json in Resources */,
 				C850590C1FFD204A00A8367E /* Assets.xcassets in Resources */,
-				C8A3CB23201F97F00072FE7C /* FractionPuzzleQuestion.json in Resources */,
+				C8A3CB23201F97F00072FE7C /* MakeItZeroJSON.json in Resources */,
 				C83A01772018E44D00EE6DBA /* Neucha.ttf in Resources */,
 				C850590A1FFD204A00A8367E /* Main.storyboard in Resources */,
 			);
@@ -304,10 +316,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C85059051FFD204A00A8367E /* AppDelegate.swift in Sources */,
+				C86B03D020262DFF0020535E /* BoardCollectionViewCell.swift in Sources */,
 				C8FAB0DA2020B0B80072E1BB /* FractionPuzzleViewController.swift in Sources */,
 				C8B0AF7F2001194E00ABBAFD /* MenuTableViewController.swift in Sources */,
 				C8251AA72020A826001F3DFB /* PuzzleTableViewController.swift in Sources */,
+				C86B03CE20261A3F0020535E /* ZeroDemoPopUpViewController.swift in Sources */,
 				C83A01732017A08A00EE6DBA /* DetailConceptViewController.swift in Sources */,
+				C82535C4202605C80006E3A2 /* MakeItZeroViewController.swift in Sources */,
 				C8F6A9282020F40D006CFFA4 /* MatchPuzzleViewController.swift in Sources */,
 				C8251AA92020AC54001F3DFB /* PuzzleTableViewCell.swift in Sources */,
 				C8B0AF7B20010DA700ABBAFD /* MenuTableViewCell.swift in Sources */,
@@ -321,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C850591A1FFD204A00A8367E /* FYPTests.swift in Sources */,
+				C82535C22025F2CD0006E3A2 /* TableViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

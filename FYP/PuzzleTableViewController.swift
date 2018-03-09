@@ -127,8 +127,14 @@ class PuzzleTableViewController: UITableViewController {
         backItem.title = "Puzzle List"
         navigationItem.backBarButtonItem = backItem
         let sender = sender as! PuzzleCell
-        if(segue.identifier == "showFractionPuzzle"){
-            if let fractionPuzzleViewController = segue.destination as? FractionPuzzleViewController{
+        if(segue.identifier == "showMatchPuzzle"){
+            if let matchPuzzleVC = segue.destination as? MatchPuzzleViewController{
+                matchPuzzleVC.descriptionBoxBGColor = adjustColor(aColor: sender.bgColor!,by: 10.0)
+                matchPuzzleVC.descriptionBGColor = adjustColor(aColor: sender.bgColor!,by: 20.0)
+            }
+        }
+        else if(segue.identifier == "showMakeItZero"){
+            if let fractionPuzzleViewController = segue.destination as? MakeItZeroViewController{
                 fractionPuzzleViewController.descriptionBoxBGColor = adjustColor(aColor: sender.bgColor!,by: 10.0)
                 fractionPuzzleViewController.descriptionBGColor = adjustColor(aColor: sender.bgColor!,by: 20.0)
             }
@@ -141,7 +147,7 @@ class PuzzleTableViewController: UITableViewController {
         print(elements[indexPath.row].id)
         switch(elements[indexPath.row].id){
         case "1":
-            performSegue(withIdentifier: "showFractionPuzzle", sender: elements[indexPath.row])
+            performSegue(withIdentifier: "showMakeItZero", sender: elements[indexPath.row])
         case "2":
             performSegue(withIdentifier: "showMatchPuzzle", sender: elements[indexPath.row])
         case "3":

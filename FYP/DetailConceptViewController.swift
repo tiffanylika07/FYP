@@ -13,9 +13,7 @@ class DetailConceptViewController: UIViewController {
     
     @IBOutlet weak var titleView: UIView!
     @IBOutlet weak var containerView: UIView!
-
     
-    @IBOutlet var btnTouchRecognizer: UITapGestureRecognizer!
     
     var selectedCellName = ""
     var selectedCellID = 0

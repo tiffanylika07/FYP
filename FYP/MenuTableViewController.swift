@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class MenuCell {
+struct MenuCell {
     var id: String
     var name: String
     var photo: UIImage?
@@ -38,7 +38,7 @@ class MenuTableViewController: UITableViewController {
     
     var elements = [MenuCell]()
     
-    private func lodadTableData(){
+    func lodadTableData(){
         
         let path = Bundle.main.path(forResource: "MenuCellJSON", ofType: "json")
         let url = URL(fileURLWithPath: path!)
