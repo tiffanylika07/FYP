@@ -17,7 +17,10 @@
 		C83A017B201A317F00EE6DBA /* MenuCellJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = C83A017A201A317F00EE6DBA /* MenuCellJSON.json */; };
 		C83A017F201B9C6700EE6DBA /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83A017E201B9C6700EE6DBA /* ContentViewController.swift */; };
 		C84270AE2052DC7300CEB285 /* GifControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84270AD2052DC7300CEB285 /* GifControl.swift */; };
-		C84270B02052DCC400CEB285 /* wtf.gif in Resources */ = {isa = PBXBuildFile; fileRef = C84270AF2052DCC400CEB285 /* wtf.gif */; };
+		C84270B2205D592300CEB285 /* LevelPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84270B1205D592300CEB285 /* LevelPopUpViewController.swift */; };
+		C84270B4206409E900CEB285 /* WaterPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84270B3206409E900CEB285 /* WaterPuzzleViewController.swift */; };
+		C84270B72064DD0100CEB285 /* MatchPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84270B62064DD0000CEB285 /* MatchPuzzleViewController.swift */; };
+		C84270B92065097800CEB285 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = C84270B82065097800CEB285 /* demo.gif */; };
 		C85059051FFD204A00A8367E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85059041FFD204A00A8367E /* AppDelegate.swift */; };
 		C850590A1FFD204A00A8367E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85059081FFD204A00A8367E /* Main.storyboard */; };
 		C850590C1FFD204A00A8367E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C850590B1FFD204A00A8367E /* Assets.xcassets */; };
@@ -29,9 +32,7 @@
 		C8A3CB23201F97F00072FE7C /* MakeItZeroJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = C8A3CB22201F97EF0072FE7C /* MakeItZeroJSON.json */; };
 		C8B0AF7B20010DA700ABBAFD /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0AF7A20010DA700ABBAFD /* MenuTableViewCell.swift */; };
 		C8B0AF7F2001194E00ABBAFD /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0AF7E2001194E00ABBAFD /* MenuTableViewController.swift */; };
-		C8F6A9282020F40D006CFFA4 /* MatchPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F6A9272020F40D006CFFA4 /* MatchPuzzleViewController.swift */; };
 		C8F6A92A202211F6006CFFA4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F6A929202211F6006CFFA4 /* HomeViewController.swift */; };
-		C8FAB0DA2020B0B80072E1BB /* FractionPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FAB0D92020B0B80072E1BB /* FractionPuzzleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +63,10 @@
 		C83A017A201A317F00EE6DBA /* MenuCellJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MenuCellJSON.json; sourceTree = "<group>"; };
 		C83A017E201B9C6700EE6DBA /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		C84270AD2052DC7300CEB285 /* GifControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifControl.swift; sourceTree = "<group>"; };
-		C84270AF2052DCC400CEB285 /* wtf.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wtf.gif; sourceTree = "<group>"; };
+		C84270B1205D592300CEB285 /* LevelPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelPopUpViewController.swift; sourceTree = "<group>"; };
+		C84270B3206409E900CEB285 /* WaterPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WaterPuzzleViewController.swift; path = ../WaterPuzzleViewController.swift; sourceTree = "<group>"; };
+		C84270B62064DD0000CEB285 /* MatchPuzzleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchPuzzleViewController.swift; path = "New Group/MatchPuzzleViewController.swift"; sourceTree = "<group>"; };
+		C84270B82065097800CEB285 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 		C85059011FFD204A00A8367E /* FYP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85059041FFD204A00A8367E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C85059091FFD204A00A8367E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,9 +84,7 @@
 		C8A3CB22201F97EF0072FE7C /* MakeItZeroJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MakeItZeroJSON.json; sourceTree = "<group>"; };
 		C8B0AF7A20010DA700ABBAFD /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		C8B0AF7E2001194E00ABBAFD /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
-		C8F6A9272020F40D006CFFA4 /* MatchPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchPuzzleViewController.swift; sourceTree = "<group>"; };
 		C8F6A929202211F6006CFFA4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		C8FAB0D92020B0B80072E1BB /* FractionPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractionPuzzleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,21 +142,22 @@
 				C85059041FFD204A00A8367E /* AppDelegate.swift */,
 				C83A017E201B9C6700EE6DBA /* ContentViewController.swift */,
 				C83A01722017A08A00EE6DBA /* DetailConceptViewController.swift */,
-				C8FAB0D92020B0B80072E1BB /* FractionPuzzleViewController.swift */,
 				C8F6A929202211F6006CFFA4 /* HomeViewController.swift */,
-				C8F6A9272020F40D006CFFA4 /* MatchPuzzleViewController.swift */,
 				C8B0AF7A20010DA700ABBAFD /* MenuTableViewCell.swift */,
 				C8B0AF7E2001194E00ABBAFD /* MenuTableViewController.swift */,
+				C84270B62064DD0000CEB285 /* MatchPuzzleViewController.swift */,
 				C8251AA82020AC54001F3DFB /* PuzzleTableViewCell.swift */,
 				C8251AA62020A826001F3DFB /* PuzzleTableViewController.swift */,
 				C82535C3202605C80006E3A2 /* MakeItZeroViewController.swift */,
+				C84270B3206409E900CEB285 /* WaterPuzzleViewController.swift */,
 				C84270AD2052DC7300CEB285 /* GifControl.swift */,
 				C86B03CF20262DFF0020535E /* BoardCollectionViewCell.swift */,
-				C84270AF2052DCC400CEB285 /* wtf.gif */,
+				C84270B82065097800CEB285 /* demo.gif */,
 				C83A01762018E44D00EE6DBA /* Neucha.ttf */,
 				C850590B1FFD204A00A8367E /* Assets.xcassets */,
 				C850590D1FFD204A00A8367E /* LaunchScreen.storyboard */,
 				C85059081FFD204A00A8367E /* Main.storyboard */,
+				C84270B1205D592300CEB285 /* LevelPopUpViewController.swift */,
 				C86B03CD20261A3F0020535E /* ZeroDemoPopUpViewController.swift */,
 			);
 			path = FYP;
@@ -294,9 +297,9 @@
 				C850590F1FFD204A00A8367E /* LaunchScreen.storyboard in Resources */,
 				C8251AA32020A652001F3DFB /* PuzzleMenuJSON.json in Resources */,
 				C850590C1FFD204A00A8367E /* Assets.xcassets in Resources */,
-				C84270B02052DCC400CEB285 /* wtf.gif in Resources */,
 				C8A3CB23201F97F00072FE7C /* MakeItZeroJSON.json in Resources */,
 				C83A01772018E44D00EE6DBA /* Neucha.ttf in Resources */,
+				C84270B92065097800CEB285 /* demo.gif in Resources */,
 				C850590A1FFD204A00A8367E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,16 +327,17 @@
 			files = (
 				C85059051FFD204A00A8367E /* AppDelegate.swift in Sources */,
 				C86B03D020262DFF0020535E /* BoardCollectionViewCell.swift in Sources */,
-				C8FAB0DA2020B0B80072E1BB /* FractionPuzzleViewController.swift in Sources */,
 				C8B0AF7F2001194E00ABBAFD /* MenuTableViewController.swift in Sources */,
 				C84270AE2052DC7300CEB285 /* GifControl.swift in Sources */,
 				C8251AA72020A826001F3DFB /* PuzzleTableViewController.swift in Sources */,
 				C86B03CE20261A3F0020535E /* ZeroDemoPopUpViewController.swift in Sources */,
 				C83A01732017A08A00EE6DBA /* DetailConceptViewController.swift in Sources */,
 				C82535C4202605C80006E3A2 /* MakeItZeroViewController.swift in Sources */,
-				C8F6A9282020F40D006CFFA4 /* MatchPuzzleViewController.swift in Sources */,
+				C84270B2205D592300CEB285 /* LevelPopUpViewController.swift in Sources */,
 				C8251AA92020AC54001F3DFB /* PuzzleTableViewCell.swift in Sources */,
 				C8B0AF7B20010DA700ABBAFD /* MenuTableViewCell.swift in Sources */,
+				C84270B72064DD0100CEB285 /* MatchPuzzleViewController.swift in Sources */,
+				C84270B4206409E900CEB285 /* WaterPuzzleViewController.swift in Sources */,
 				C83A017F201B9C6700EE6DBA /* ContentViewController.swift in Sources */,
 				C8F6A92A202211F6006CFFA4 /* HomeViewController.swift in Sources */,
 			);

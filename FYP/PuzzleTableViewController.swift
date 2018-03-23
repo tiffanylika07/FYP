@@ -139,6 +139,12 @@ class PuzzleTableViewController: UITableViewController {
                 fractionPuzzleViewController.descriptionBGColor = adjustColor(aColor: sender.bgColor!,by: 20.0)
             }
         }
+        else if(segue.identifier == "showWaterPuzzle"){
+            if let vc = segue.destination as? WaterPuzzleViewController{
+                vc.descriptionBoxBGColor = adjustColor(aColor: sender.bgColor!,by: 10.0)
+                vc.descriptionBGColor = adjustColor(aColor: sender.bgColor!,by: 20.0)
+            }
+        }
         
     }
     
@@ -151,13 +157,7 @@ class PuzzleTableViewController: UITableViewController {
         case "2":
             performSegue(withIdentifier: "showMatchPuzzle", sender: elements[indexPath.row])
         case "3":
-            performSegue(withIdentifier: "showFractionPuzzle", sender: elements[indexPath.row])
-        case "4":
-            performSegue(withIdentifier: "showFractionPuzzle", sender: elements[indexPath.row])
-        case "5":
-            performSegue(withIdentifier: "showFractionPuzzle", sender: elements[indexPath.row])
-        case "6":
-            performSegue(withIdentifier: "showFractionPuzzle", sender: elements[indexPath.row])
+            performSegue(withIdentifier: "showWaterPuzzle", sender: elements[indexPath.row])
         default:
             print("Error")
         }

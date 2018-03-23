@@ -91,6 +91,14 @@ class MakeItZeroViewController: UIViewController{
          PuzzleAreaView.bringSubview(toFront: number_III)
         PuzzleAreaView.sendSubview(toBack: boardView)
         
+        
+        //Navigation
+        
+        //Back buttion
+        self.navigationItem.title = "Level " + String(question_ID + 1)
+        let barButton = UIBarButtonItem(title: "< Puzzle List", style: .plain, target: self, action: #selector(back(sender:)))
+        self.navigationItem.leftBarButtonItem = barButton
+        
         for frameView in boardView.subviews{
             frameView.layer.borderWidth = 2
             frameView.layer.cornerRadius = 10
@@ -104,6 +112,10 @@ class MakeItZeroViewController: UIViewController{
     
         
     }
+    @objc func back(sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "backToPuzzleList", sender: self)
+    }
+    
     
     @IBAction func demoBtnTapped(_ sender: Any) {
         let popUpVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "demoPopUp") as! ZeroDemoPopUpViewController
@@ -111,6 +123,17 @@ class MakeItZeroViewController: UIViewController{
         popUpVC.view.frame = self.view.frame
         self.view.addSubview(popUpVC.view)
         popUpVC.didMove(toParentViewController: self)
+    }
+    
+    @IBAction func levelBtnTApped(_ sender: UIButton) {
+        let popUpVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "levelPopUp") as! LevelPopUpViewController
+        popUpVC.descriptionBoxBGColor = descriptionBoxBGColor
+        popUpVC.descriptionBGColor = descriptionBGColor
+        self.addChildViewController(popUpVC)
+        popUpVC.view.frame = self.view.frame
+        self.view.addSubview(popUpVC.view)
+        popUpVC.didMove(toParentViewController: self)
+
     }
     
     func InitLocationData(){
@@ -141,31 +164,29 @@ class MakeItZeroViewController: UIViewController{
             let data = try Data(contentsOf:url)
             let questionList = try JSONDecoder().decode([question].self, from: data)
             print("GET")
+            print("QuesID",question_ID)
             ques = questionList[question_ID]
-            for q in questionList{
-                if(!q.initial.isEmpty){
-                    for point in q.initial{
-                        // 3 / A
-                        var temp =  point.components(separatedBy: "/")
-                        switch temp[1]{
-                            case "A":
-                                label_A.text = temp.isEmpty ? "0" : temp[0]
-                            case "B":
-                                label_B.text = temp.isEmpty ? "0" : temp[0]
-                            case "C":
-                                label_C.text = temp.isEmpty ? "0" : temp[0]
-                             case "D":
-                                label_D.text = temp.isEmpty ? "0" : temp[0]
-                            default:
-                                return
-                        }
-                        
+            if(ques != nil){
+                for point in ques.initial{
+                    var temp =  point.components(separatedBy: "/")
+                    switch temp[1]{
+                        case "A":
+                            label_A.text = temp.isEmpty ? "0" : temp[0]
+                        case "B":
+                            label_B.text = temp.isEmpty ? "0" : temp[0]
+                        case "C":
+                            label_C.text = temp.isEmpty ? "0" : temp[0]
+                         case "D":
+                            label_D.text = temp.isEmpty ? "0" : temp[0]
+                        default:
+                            return
                     }
-                    clearFrame()
-                    number_I.text = String(q.nextNum[0])
-                    number_II.text = String(q.nextNum[1])
-                    number_III.text = String(q.nextNum[2])
+                    
                 }
+                clearFrame()
+                number_I.text = String(ques.nextNum[0])
+                number_II.text = String(ques.nextNum[1])
+                number_III.text = String(ques.nextNum[2])
             }
         }
         catch{
@@ -210,15 +231,14 @@ class MakeItZeroViewController: UIViewController{
         if(count >= 4){
             let alert = UIAlertController(title: "Success", message: "You solve this puzzle!", preferredStyle: .alert)
             
-            alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
-            alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+            alert.addAction(UIAlertAction(title: "Next Level", style: .default, handler: {action in self.LoadNextLevel()}))
             
             self.present(alert, animated: true)
         }
         else if (full >= 4){
             let alert = UIAlertController(title: "Full", message: "The board is full, you lose!", preferredStyle: .alert)
             
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in self.reloadPage()}))
+            alert.addAction(UIAlertAction(title: "Try Again", style: .default, handler: {action in self.reloadPage()}))
             
             self.present(alert, animated: true)
         }
@@ -239,6 +259,22 @@ class MakeItZeroViewController: UIViewController{
         num_C = Int(label_C.text!)!
         num_D = Int(label_D.text!)!
     }
+    
+    func LoadNextLevel(){
+        question_ID = question_ID + 1
+        self.navigationItem.title = "Level " + String(question_ID + 1)
+        LoadQuestionData()
+        number_I.isHidden = false
+        number_II.isHidden = false
+        number_III.isHidden = false
+        
+        num_A = Int(label_A.text!)!
+        num_B = Int(label_B.text!)!
+        num_C = Int(label_C.text!)!
+        num_D = Int(label_D.text!)!
+        print(num_A, num_B, num_C,num_D)
+    }
+    
     func clearBoard(){
         for frame in boardView.subviews{
             for label in frame.subviews{
@@ -257,6 +293,9 @@ class MakeItZeroViewController: UIViewController{
                 let boardNum = label as! UILabel
                 if(boardNum.text == "0"){
                     boardNum.isHidden = true
+                }
+                else{
+                    boardNum.isHidden = false
                 }
             }
         }

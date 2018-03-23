@@ -9,8 +9,14 @@
       "name": "Match Puzzle",
       "id": "2",
       "color": [255,77,136,1],
-      "image": "icon_direction"
+      "image": "match_V"
     },
+      {
+          "name": "Measure the Water",
+          "id": "3",
+          "color": [92,214,92,1],
+          "image": "cup"
+      }
   
   ]
 

@@ -15,8 +15,8 @@ class ZeroDemoPopUpViewController: UIViewController {
     @IBOutlet weak var demoGifView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
-        demoGifView.loadGif(name: "wtf")
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        demoGifView.loadGif(name: "demo")
         // Do any additional setup after loading the view.
     }
 
