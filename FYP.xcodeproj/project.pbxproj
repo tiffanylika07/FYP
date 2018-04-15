@@ -61,14 +61,14 @@
 		C8251AA82020AC54001F3DFB /* PuzzleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleTableViewCell.swift; sourceTree = "<group>"; };
 		C82535C12025F2CD0006E3A2 /* TableViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewTest.swift; sourceTree = "<group>"; };
 		C82535C3202605C80006E3A2 /* MakeItZeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeItZeroViewController.swift; sourceTree = "<group>"; };
-		C83A01722017A08A00EE6DBA /* DetailConceptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConceptViewController.swift; sourceTree = "<group>"; };
+		C83A01722017A08A00EE6DBA /* DetailConceptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailConceptViewController.swift; path = "/Users/tiffanyli/Documents/XCode Projects/FYP/FYP/DetailConceptViewController.swift"; sourceTree = "<absolute>"; };
 		C83A01762018E44D00EE6DBA /* Neucha.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Neucha.ttf; sourceTree = "<group>"; };
 		C83A017A201A317F00EE6DBA /* MenuCellJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MenuCellJSON.json; sourceTree = "<group>"; };
 		C83A017E201B9C6700EE6DBA /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		C84270AD2052DC7300CEB285 /* GifControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifControl.swift; sourceTree = "<group>"; };
 		C84270B1205D592300CEB285 /* LevelPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelPopUpViewController.swift; sourceTree = "<group>"; };
 		C84270B3206409E900CEB285 /* WaterPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WaterPuzzleViewController.swift; path = ../WaterPuzzleViewController.swift; sourceTree = "<group>"; };
-		C84270B62064DD0000CEB285 /* MatchPuzzleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchPuzzleViewController.swift; path = "New Group/MatchPuzzleViewController.swift"; sourceTree = "<group>"; };
+		C84270B62064DD0000CEB285 /* MatchPuzzleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchPuzzleViewController.swift; sourceTree = "<group>"; };
 		C84270B82065097800CEB285 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 		C84AD4F5208368CB00FF0D5C /* MatchPuzzle2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchPuzzle2ViewController.swift; sourceTree = "<group>"; };
 		C85059011FFD204A00A8367E /* FYP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYP.app; sourceTree = BUILT_PRODUCTS_DIR; };
