@@ -126,7 +126,7 @@ class AlgebraPuzzleViewController: UIViewController, UITextFieldDelegate {
         print(ansField.text!)
         print(quesAns)
         if(ansField.text! == quesAns!){
-            let alert = UIAlertController(title: "Success", message: "You solve this puzzle!", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Correct!", message: "You solved this puzzle!", preferredStyle: .alert)
             
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in self.nextQuestion()}))
             
@@ -142,21 +142,20 @@ class AlgebraPuzzleViewController: UIViewController, UITextFieldDelegate {
     }
     
     func nextQuestion(){
+        ansField.endEditing(true)
         if(listCount >= quesID + 1){
             quesID = quesID + 1
             LoadQuestionData()
-            textFieldDidBeginEditing(ansField)
-            textFieldShouldEndEditing(ansField)
+            ansField.text = ""
         }
     }
     
 
     @IBAction func BackTapped(_ sender: Any) {
+        ansField.endEditing(true)
         if(quesID - 1 >= 1){
             quesID = quesID - 1
             LoadQuestionData()
-            textFieldDidBeginEditing(ansField)
-            textFieldShouldEndEditing(ansField)
         }
     }
     

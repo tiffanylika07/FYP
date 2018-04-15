@@ -6,10 +6,10 @@
       "image": "icon_shape"
     },
     {
-      "name": "Addition, Subtraction, Multiplication and Division",
+      "name": "Direction",
       "id": "2",
       "color": [255,77,136,1],
-      "image": "icon_2"
+      "image": "icon_direction"
     },
     {
       "name": "Basic Algebra",
@@ -22,12 +22,6 @@
       "id": "4",
       "color": [92,214,92,1],
       "image": "icon_volume"
-    },
-    {
-      "name": "Time",
-      "id": "5",
-      "color": [194,102,255,1],
-      "image": "icon_time"
     },
     {
       "name": "General Fraction",

@@ -6,9 +6,14 @@
     },
     {
       "q_id": 2,
-      "ans":30,
-    "pic":"AppIcon"
-    }
+      "ans":87,
+    "pic":"Alge_Q2"
+    },
+  {
+  "q_id": 3,
+  "ans":40,
+  "pic":"Alge_Q3"
+  }
   
   ]
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MatchPuzzleViewController: UIViewController {
+class MatchPuzzle2ViewController: UIViewController {
     
     @IBOutlet weak var DescriptionBoxView: UIView!
     @IBOutlet weak var PuzzleAreaView: UIView!
@@ -16,6 +16,9 @@ class MatchPuzzleViewController: UIViewController {
     
     @IBOutlet weak var DescriptionView: UITextView!
     @IBOutlet weak var SubmitButton: UIImageView!
+    
+    @IBOutlet weak var backBtn: UIButton!
+    @IBOutlet weak var nextBtn: UIButton!
     
     @IBOutlet weak var MatchAreaView: UIView!
     //Matches
@@ -45,18 +48,15 @@ class MatchPuzzleViewController: UIViewController {
     @IBOutlet weak var match_H_11: UIImageView!
     @IBOutlet weak var match_H_12: UIImageView!
     @IBOutlet weak var reStartBtn: UIButton!
-     var ori = CGPoint()
+    var ori = CGPoint()
     
     var descriptionBoxBGColor : UIColor?
     var descriptionBGColor : UIColor?
- override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         InitializeView()
+        
     }
-    
-    @IBOutlet weak var backBtn: UIButton!
-    @IBOutlet weak var nextBtn: UIButton!
-    
     var matches_V = [UIImageView](repeating: UIImageView(), count: 64)
     var matches_H = [UIImageView](repeating: UIImageView(), count: 64)
     
@@ -65,7 +65,7 @@ class MatchPuzzleViewController: UIViewController {
         tapGesture.numberOfTapsRequired = 1
         tapGesture.numberOfTouchesRequired = 1
         SubmitButton.addGestureRecognizer(tapGesture)
-    
+        
         
         
         DescriptionBoxView.layer.borderColor = UIColor.black.cgColor
@@ -73,7 +73,7 @@ class MatchPuzzleViewController: UIViewController {
         DescriptionBoxView.layer.cornerRadius = 20
         DescriptionView.layer.cornerRadius = 20
         DescriptionView.isEditable = false
- DescriptionBoxView.backgroundColor = descriptionBoxBGColor
+        DescriptionBoxView.backgroundColor = descriptionBoxBGColor
         DescriptionView.backgroundColor = descriptionBGColor
         
         for match in MatchAreaView.subviews{
@@ -91,19 +91,18 @@ class MatchPuzzleViewController: UIViewController {
     }
     func initializeData(){
         matches_V = [match_V_1,match_V_2,match_V_3,match_V_4,
-                    match_V_5,match_V_6,match_V_7,match_V_8,
-                    match_V_9,match_V_10,match_V_11,match_V_12]
+                     match_V_5,match_V_6,match_V_7,match_V_8,
+                     match_V_9,match_V_10,match_V_11,match_V_12]
         matches_H = [match_H_1,match_H_2,match_H_3,match_H_4,
-        match_H_5,match_H_6,match_H_7,match_H_8,
-        match_H_9,match_H_10,match_H_11,match_H_12]
+                     match_H_5,match_H_6,match_H_7,match_H_8,
+                     match_H_9,match_H_10,match_H_11,match_H_12]
         
         
     }
     
-    var verticalArr = [ 2 ,3, 6, 7, 10, 11]
-    var horArr = [ 4,5,6,7,8,9]
+    var verticalArr =  [1,4,5,6,7,8,9,12]
+    var horArr = [1,2,3,5,8,10,11,12]
     
-
     @IBAction func ReStart(_ sender: Any) {
         for (i,match) in matches_V.enumerated(){
             if (verticalArr.contains(i+1)){
@@ -125,11 +124,11 @@ class MatchPuzzleViewController: UIViewController {
     }
     @objc func wasDragged(_ dragGR: UIPanGestureRecognizer)
     {
-       let translate = dragGR.translation(in: self.view)
+        let translate = dragGR.translation(in: self.view)
         let temp = dragGR.view!
-       
+        
         if(dragGR.state == .began){
-           print("ori", dragGR.view!.center)
+            print("ori", dragGR.view!.center)
             ori = dragGR.view!.center
         }
         if(dragGR.state == .changed){
@@ -147,7 +146,7 @@ class MatchPuzzleViewController: UIViewController {
                         }
                     }
                 }
-            
+                
             }
             else if (matches_H.contains(dragGR.view as! UIImageView)){
                 for (i, match) in matches_H.enumerated(){
@@ -175,15 +174,15 @@ class MatchPuzzleViewController: UIViewController {
             }
         }
     }
-
+    
     @objc func tapAction(sender:UITapGestureRecognizer){
         if(checkFinish()){
             let alertView = UIAlertController(title: "Correct!", message: "Congradualations! You're correct!", preferredStyle: UIAlertControllerStyle.alert)
             
-            let cancel = UIAlertAction(title: "Cancel", style: .destructive)
+            let cancel = UIAlertAction(title: "OK", style: .destructive)
             let next = UIAlertAction(title: "Next", style: .default, handler: goToNextQuestion)
             alertView.addAction(cancel)
-            alertView.addAction(next)
+            //alertView.addAction(next)
             present(alertView, animated: true, completion: nil)
         }
         else{
@@ -195,55 +194,63 @@ class MatchPuzzleViewController: UIViewController {
         }
     }
     func goToNextQuestion(alert: UIAlertAction!) {
-       performSegue(withIdentifier: "goToNext", sender: self)
+        // performSegue(withIdentifier: "nextQuestion", sender: self)
         print("Pressed Next")
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let backItem = UIBarButtonItem()
-        backItem.title = "Previous Question"
+        backItem.title = "Puzzle List"
         navigationItem.backBarButtonItem = backItem
-        if let match2VC = segue.destination as? MatchPuzzle2ViewController{
-            match2VC.descriptionBGColor = descriptionBGColor
-            match2VC.descriptionBoxBGColor = descriptionBoxBGColor
+        
+        if(segue.identifier == "backToPrevious"){
+            if let matchPuzzleVC = segue.destination as? MatchPuzzleViewController{
+                matchPuzzleVC.descriptionBoxBGColor = descriptionBoxBGColor
+                matchPuzzleVC.descriptionBGColor = descriptionBGColor
+            }
         }
         
         
     }
     
     func checkFinish() -> Bool{
-        if(match_H_2.image != nil && match_H_4.image != nil && match_H_5.image != nil &&
-            match_H_7.image != nil && match_H_8.image != nil && match_H_11.image != nil &&
-        match_V_2.image != nil && match_V_3.image != nil && match_V_5.image != nil &&
-            match_V_6.image != nil && match_V_10.image != nil && match_V_11.image != nil){
-                return true
-        }
-        else if (match_H_2.image != nil && match_H_4.image != nil && match_H_5.image != nil &&
-            match_H_6.image != nil && match_H_7.image != nil && match_H_9.image != nil &&
-            match_V_2.image != nil && match_V_3.image != nil && match_V_5.image != nil &&
-            match_V_6.image != nil && match_V_7.image != nil && match_V_8.image != nil){
-                return true
-        }
-        else if (match_H_2.image != nil && match_H_11.image != nil && match_H_5.image != nil &&
-            match_H_6.image != nil && match_H_8.image != nil && match_H_9.image != nil &&
-            match_V_2.image != nil && match_V_3.image != nil && match_V_7.image != nil &&
-            match_V_8.image != nil && match_V_10.image != nil && match_V_11.image != nil){
+        if(match_H_1.image != nil && match_H_2.image != nil && match_H_3.image != nil &&
+            match_H_4.image != nil && match_H_9.image != nil && match_H_10.image != nil &&
+            match_H_11.image != nil &&
+            match_H_12.image != nil &&
+            match_V_1.image != nil && match_V_2.image != nil && match_V_4.image != nil &&
+            match_V_5.image != nil && match_V_8.image != nil && match_V_9.image != nil && match_V_11.image != nil && match_V_12.image != nil ){
             return true
         }
-        else if (match_H_4.image != nil && match_H_7.image != nil && match_H_11.image != nil &&
-            match_H_6.image != nil && match_H_8.image != nil && match_H_9.image != nil &&
-            match_V_5.image != nil && match_V_6.image != nil && match_V_7.image != nil &&
-            match_V_8.image != nil && match_V_10.image != nil && match_V_11.image != nil){
+        else if (match_H_1.image != nil && match_H_2.image != nil && match_H_5.image != nil &&
+            match_H_6.image != nil && match_H_7.image != nil && match_H_8.image != nil &&
+            match_H_11.image != nil &&
+            match_H_12.image != nil &&
+            match_V_1.image != nil && match_V_3.image != nil && match_V_11.image != nil &&
+            match_V_5.image != nil && match_V_6.image != nil && match_V_7.image != nil && match_V_9.image != nil && match_V_10.image != nil ){
             return true
         }
+        else if (match_H_1.image != nil && match_H_2.image != nil && match_H_3.image != nil &&
+            match_H_6.image != nil && match_H_7.image != nil && match_H_10.image != nil &&
+            match_H_11.image != nil &&
+            match_H_12.image != nil &&
+            match_V_1.image != nil && match_V_3.image != nil && match_V_4.image != nil &&
+            match_V_5.image != nil && match_V_8.image != nil && match_V_12.image != nil && match_V_9.image != nil && match_V_10.image != nil ){
+            return true
+        }
+
         else{
-                return false
+            return false
         }
         
     }
-
-    @IBAction func NextBtnTapped(_ sender: Any) {
-        performSegue(withIdentifier: "goToNext", sender: self)
+    
+    @IBAction func BackBtnTapped(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+        //performSegue(withIdentifier: "backToPrevious", sender: self)
+    }
+    @IBAction func nextBtnTapped(_ sender: Any) {
     }
     
     
 }
+
