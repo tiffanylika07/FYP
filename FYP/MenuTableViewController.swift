@@ -147,8 +147,8 @@ class MenuTableViewController: UITableViewController {
                 performSegue(withIdentifier: "showConcept_Addition", sender: elements[indexPath.row])
             case "3":
                 performSegue(withIdentifier: "showConcept_Algebra", sender: elements[indexPath.row])
-//            case "4":
-//                performSegue(withIdentifier: "showConcept_Area", sender: elements[indexPath.row])
+            case "4":
+                performSegue(withIdentifier: "showConcept_vol", sender: elements[indexPath.row])
             case "5":
                 performSegue(withIdentifier: "showConcept_Time", sender: elements[indexPath.row])
             case "6":

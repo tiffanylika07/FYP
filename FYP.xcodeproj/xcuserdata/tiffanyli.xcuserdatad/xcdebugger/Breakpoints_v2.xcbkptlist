@@ -103,13 +103,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FYP/MakeItZeroViewController.swift"
-            timestampString = "543486729.142964"
+            timestampString = "545404866.521731"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "222"
             endingLineNumber = "222"
             landmarkName = "checkFinish()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FYP/AlgebraPuzzleViewController.swift"
+            timestampString = "545478770.066386"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "LoadQuestionData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FYP.AlgebraPuzzleViewController.LoadQuestionData() -&gt; ()"
+                  moduleName = "FYP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tiffanyli/Documents/XCode%20Projects/FYP/FYP/AlgebraPuzzleViewController.swift"
+                  timestampString = "545409299.21845"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "1193">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (FYP.AlgebraPuzzleViewController.question_A) -&gt; Swift.Bool in FYP.AlgebraPuzzleViewController.LoadQuestionData() -&gt; ()"
+                  moduleName = "FYP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tiffanyli/Documents/XCode%20Projects/FYP/FYP/AlgebraPuzzleViewController.swift"
+                  timestampString = "545409299.231302"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

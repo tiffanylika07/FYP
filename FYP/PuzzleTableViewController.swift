@@ -145,6 +145,13 @@ class PuzzleTableViewController: UITableViewController {
                 vc.descriptionBGColor = adjustColor(aColor: sender.bgColor!,by: 20.0)
             }
         }
+        else if(segue.identifier == "showAlgebraPuzzle"){
+            if let vc = segue.destination as? AlgebraPuzzleViewController{
+                
+                vc.descriptionBoxBGColor = adjustColor(aColor: sender.bgColor!,by: 10.0)
+                vc.descriptionBGColor = adjustColor(aColor: sender.bgColor!,by: 20.0)
+            }
+        }
         
     }
     
@@ -158,6 +165,8 @@ class PuzzleTableViewController: UITableViewController {
             performSegue(withIdentifier: "showMatchPuzzle", sender: elements[indexPath.row])
         case "3":
             performSegue(withIdentifier: "showWaterPuzzle", sender: elements[indexPath.row])
+        case "4":
+            performSegue(withIdentifier: "showAlgebraPuzzle", sender: elements[indexPath.row])
         default:
             print("Error")
         }

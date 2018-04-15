@@ -174,10 +174,7 @@ class MatchPuzzleViewController: UIViewController {
     }
 
     @objc func tapAction(sender:UITapGestureRecognizer){
-        if(match_H_2.image != nil && match_H_4.image != nil && match_H_5.image != nil &&
-            match_H_7.image != nil && match_H_8.image != nil && match_H_11.image != nil &&
-            match_V_2.image != nil && match_V_3.image != nil && match_V_5.image != nil &&
-            match_V_6.image != nil && match_V_10.image != nil && match_V_11.image != nil){
+        if(checkFinish()){
             let alertView = UIAlertController(title: "Correct!", message: "Congradualations! You're correct!", preferredStyle: UIAlertControllerStyle.alert)
             
             let cancel = UIAlertAction(title: "Cancel", style: .destructive)
@@ -206,12 +203,33 @@ class MatchPuzzleViewController: UIViewController {
         
     }
     
-    func checkFinish(){
+    func checkFinish() -> Bool{
         if(match_H_2.image != nil && match_H_4.image != nil && match_H_5.image != nil &&
             match_H_7.image != nil && match_H_8.image != nil && match_H_11.image != nil &&
         match_V_2.image != nil && match_V_3.image != nil && match_V_5.image != nil &&
             match_V_6.image != nil && match_V_10.image != nil && match_V_11.image != nil){
-            
+                return true
+        }
+        else if (match_H_2.image != nil && match_H_4.image != nil && match_H_5.image != nil &&
+            match_H_6.image != nil && match_H_7.image != nil && match_H_9.image != nil &&
+            match_V_2.image != nil && match_V_3.image != nil && match_V_5.image != nil &&
+            match_V_6.image != nil && match_V_7.image != nil && match_V_8.image != nil){
+                return true
+        }
+        else if (match_H_2.image != nil && match_H_11.image != nil && match_H_5.image != nil &&
+            match_H_6.image != nil && match_H_8.image != nil && match_H_9.image != nil &&
+            match_V_2.image != nil && match_V_3.image != nil && match_V_7.image != nil &&
+            match_V_8.image != nil && match_V_10.image != nil && match_V_11.image != nil){
+            return true
+        }
+        else if (match_H_4.image != nil && match_H_7.image != nil && match_H_11.image != nil &&
+            match_H_6.image != nil && match_H_8.image != nil && match_H_9.image != nil &&
+            match_V_5.image != nil && match_V_6.image != nil && match_V_7.image != nil &&
+            match_V_8.image != nil && match_V_10.image != nil && match_V_11.image != nil){
+            return true
+        }
+        else{
+                return false
         }
         
     }

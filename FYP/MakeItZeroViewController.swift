@@ -308,11 +308,9 @@ class MakeItZeroViewController: UIViewController{
         case "A":
             let ans = (num - (num_B!+num_C!+num_D!)) % 10
             if( ans == 0){
-                print("Success")
                 clearBoard()
             }
             else{
-                print("ansA ", ans)
                 label_A.text = String(num)
                 num_A = num
                 label_A.isHidden = false
@@ -364,22 +362,26 @@ class MakeItZeroViewController: UIViewController{
         let temp = dragGR.view!
         let selectedLbl = temp as! UILabel
         let selectedNum = Int(selectedLbl.text!)!
-        temp.center = CGPoint(x: temp.center.x + translate.x, y: temp.center.y+translate.y)
-        dragGR.setTranslation(CGPoint.zero, in: self.view)
+
         //Record Original Location
         if(dragGR.state == UIGestureRecognizerState.began){
-            if(dragGR.view! == number_I){
-                location_Next = ori_location_A
-            }
-            else if(dragGR.view! == number_II){
-                location_Next = ori_location_B
-            }
-            else if(dragGR.view! == number_III){
-                location_Next = ori_location_C
-            }
+//            if(dragGR.view! == number_I){
+//                location_Next = ori_location_A
+//            }
+//            else if(dragGR.view! == number_II){
+//                location_Next = ori_location_B
+//            }
+//            else if(dragGR.view! == number_III){
+//                location_Next = ori_location_C
+//            }
+            
+            location_Next = dragGR.view!.center
         }
         //Overlay effect
         if (dragGR.state == UIGestureRecognizerState.changed){
+            temp.center = CGPoint(x: temp.center.x + translate.x, y: temp.center.y+translate.y)
+            dragGR.setTranslation(CGPoint.zero, in: self.view)
+            
             let location_GR = dragGR.location(in: boardView)
             if(!(location_GR.x < 0 || location_GR.y < 0)){
                 for view in boardView.subviews{
@@ -391,6 +393,7 @@ class MakeItZeroViewController: UIViewController{
                     view.backgroundColor = UIColor.white
                 }
             }
+            
         }
         if dragGR.state == UIGestureRecognizerState.ended {
             let location_GR = dragGR.location(in: boardView)

@@ -19,7 +19,7 @@ class ContentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         contentView.backgroundColor = bgColor
-        mainView.backgroundColor = bgColor
+        mainView.backgroundColor = bgColor 
         scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: 780)
         self.view.addSubview(scrollView)
 //        playPuzzleBtn.isUserInteractionEnabled = true

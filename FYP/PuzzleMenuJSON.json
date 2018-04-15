@@ -16,6 +16,12 @@
           "id": "3",
           "color": [92,214,92,1],
           "image": "cup"
+      },
+      {
+      "name": "Algebra Puzzle",
+      "id": "4",
+      "color": [77,148,255,1],
+      "image": "icon_algebra"
       }
   
   ]

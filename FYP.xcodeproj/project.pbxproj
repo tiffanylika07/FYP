@@ -30,6 +30,8 @@
 		C86B03CE20261A3F0020535E /* ZeroDemoPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B03CD20261A3F0020535E /* ZeroDemoPopUpViewController.swift */; };
 		C86B03D020262DFF0020535E /* BoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B03CF20262DFF0020535E /* BoardCollectionViewCell.swift */; };
 		C8A3CB23201F97F00072FE7C /* MakeItZeroJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = C8A3CB22201F97EF0072FE7C /* MakeItZeroJSON.json */; };
+		C8AB9BB520777560000FBB5F /* AlgebraPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AB9BB420777560000FBB5F /* AlgebraPuzzleViewController.swift */; };
+		C8AB9BB720822378000FBB5F /* AlgebraQuestionList.json in Resources */ = {isa = PBXBuildFile; fileRef = C8AB9BB620822378000FBB5F /* AlgebraQuestionList.json */; };
 		C8B0AF7B20010DA700ABBAFD /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0AF7A20010DA700ABBAFD /* MenuTableViewCell.swift */; };
 		C8B0AF7F2001194E00ABBAFD /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B0AF7E2001194E00ABBAFD /* MenuTableViewController.swift */; };
 		C8F6A92A202211F6006CFFA4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F6A929202211F6006CFFA4 /* HomeViewController.swift */; };
@@ -82,6 +84,8 @@
 		C86B03CD20261A3F0020535E /* ZeroDemoPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroDemoPopUpViewController.swift; sourceTree = "<group>"; };
 		C86B03CF20262DFF0020535E /* BoardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCollectionViewCell.swift; sourceTree = "<group>"; };
 		C8A3CB22201F97EF0072FE7C /* MakeItZeroJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MakeItZeroJSON.json; sourceTree = "<group>"; };
+		C8AB9BB420777560000FBB5F /* AlgebraPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgebraPuzzleViewController.swift; sourceTree = "<group>"; };
+		C8AB9BB620822378000FBB5F /* AlgebraQuestionList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AlgebraQuestionList.json; sourceTree = "<group>"; };
 		C8B0AF7A20010DA700ABBAFD /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		C8B0AF7E2001194E00ABBAFD /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		C8F6A929202211F6006CFFA4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				C8A3CB22201F97EF0072FE7C /* MakeItZeroJSON.json */,
 				C83A017A201A317F00EE6DBA /* MenuCellJSON.json */,
 				C8251AA22020A652001F3DFB /* PuzzleMenuJSON.json */,
+				C8AB9BB620822378000FBB5F /* AlgebraQuestionList.json */,
 				C85059101FFD204A00A8367E /* Info.plist */,
 				C85059041FFD204A00A8367E /* AppDelegate.swift */,
 				C83A017E201B9C6700EE6DBA /* ContentViewController.swift */,
@@ -157,6 +162,7 @@
 				C850590B1FFD204A00A8367E /* Assets.xcassets */,
 				C850590D1FFD204A00A8367E /* LaunchScreen.storyboard */,
 				C85059081FFD204A00A8367E /* Main.storyboard */,
+				C8AB9BB420777560000FBB5F /* AlgebraPuzzleViewController.swift */,
 				C84270B1205D592300CEB285 /* LevelPopUpViewController.swift */,
 				C86B03CD20261A3F0020535E /* ZeroDemoPopUpViewController.swift */,
 			);
@@ -294,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C83A017B201A317F00EE6DBA /* MenuCellJSON.json in Resources */,
+				C8AB9BB720822378000FBB5F /* AlgebraQuestionList.json in Resources */,
 				C850590F1FFD204A00A8367E /* LaunchScreen.storyboard in Resources */,
 				C8251AA32020A652001F3DFB /* PuzzleMenuJSON.json in Resources */,
 				C850590C1FFD204A00A8367E /* Assets.xcassets in Resources */,
@@ -334,6 +341,7 @@
 				C83A01732017A08A00EE6DBA /* DetailConceptViewController.swift in Sources */,
 				C82535C4202605C80006E3A2 /* MakeItZeroViewController.swift in Sources */,
 				C84270B2205D592300CEB285 /* LevelPopUpViewController.swift in Sources */,
+				C8AB9BB520777560000FBB5F /* AlgebraPuzzleViewController.swift in Sources */,
 				C8251AA92020AC54001F3DFB /* PuzzleTableViewCell.swift in Sources */,
 				C8B0AF7B20010DA700ABBAFD /* MenuTableViewCell.swift in Sources */,
 				C84270B72064DD0100CEB285 /* MatchPuzzleViewController.swift in Sources */,
