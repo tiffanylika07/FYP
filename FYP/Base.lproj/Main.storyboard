@@ -1591,7 +1591,6 @@ w = width, h = height</string>
         <!--Detail Concept View Controller-->
         <scene sceneID="a5W-wl-DUZ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6GB-YB-U6N" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="4Ue-aA-TZg" customClass="DetailConceptViewController" customModule="FYP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xqh-Rn-VLl"/>
@@ -1644,6 +1643,7 @@ w = width, h = height</string>
                         <outlet property="titleView" destination="0xr-QE-8JM" id="XBd-ra-5zI"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6GB-YB-U6N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4737" y="-1100"/>
         </scene>
@@ -1733,7 +1733,7 @@ w = width, h = height</string>
                                                 <state key="normal" title="Button" image="PlayPuzzle_Btn"/>
                                                 <connections>
                                                     <action selector="PlayPuzzleAction:" destination="i8p-FO-Rc0" eventType="touchUpInside" id="1wY-N2-mLg"/>
-                                                    <action selector="PlayPuzzleAction:" destination="Vbs-EB-Iko" eventType="touchUpInside" id="oUw-41-hvH"/>
+                                                    <action selector="PlayPuzzleAction:" destination="Vbs-EB-Iko" eventType="touchUpInside" id="ydD-ca-dpb"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1767,7 +1767,7 @@ w = width, h = height</string>
                     <connections>
                         <outlet property="contentView" destination="sZl-1O-Oz8" id="wDQ-AX-bE5"/>
                         <outlet property="mainView" destination="wAy-lV-R7H" id="syZ-uq-1Ph"/>
-                        <outlet property="playBtn" destination="4af-O8-7je" id="6S9-DE-JYx"/>
+                        <outlet property="playBtn" destination="4af-O8-7je" id="eXo-pZ-6hK"/>
                         <outlet property="scrollView" destination="jSh-df-UMR" id="krO-tU-aPh"/>
                     </connections>
                 </viewController>
@@ -1778,7 +1778,6 @@ w = width, h = height</string>
         <!--Content View Controller-->
         <scene sceneID="pm7-zA-3NS">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jkL-p5-FLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="cKy-Ch-Ykb" customClass="ContentViewController" customModule="FYP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MLh-P2-KWa"/>
@@ -1834,8 +1833,8 @@ w = width, h = height</string>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button" image="PlayPuzzle_Btn"/>
                                                 <connections>
+                                                    <action selector="PlayPuzzleAction:" destination="cKy-Ch-Ykb" eventType="touchUpInside" id="5x1-fs-ie3"/>
                                                     <action selector="PlayPuzzleAction:" destination="i8p-FO-Rc0" eventType="touchUpInside" id="b0o-vF-vyU"/>
-                                                    <action selector="PlayPuzzleAction:" destination="cKy-Ch-Ykb" eventType="touchUpInside" id="oUX-se-hbd"/>
                                                     <action selector="PlayPuzzleAction:" destination="Vbs-EB-Iko" eventType="touchUpInside" id="pie-8S-OmK"/>
                                                 </connections>
                                             </button>
@@ -1869,10 +1868,11 @@ w = width, h = height</string>
                     <connections>
                         <outlet property="contentView" destination="Y4v-yu-SlU" id="mgv-Bb-WVX"/>
                         <outlet property="mainView" destination="a1g-mY-OUa" id="LSM-G5-2Yo"/>
-                        <outlet property="playBtn" destination="dsM-iD-jhP" id="4Z9-41-vLe"/>
+                        <outlet property="playBtn" destination="dsM-iD-jhP" id="owb-lV-kSl"/>
                         <outlet property="scrollView" destination="wAO-HE-AO4" id="2ty-cB-0Rp"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jkL-p5-FLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5540" y="-1159.52023988006"/>
         </scene>
@@ -1920,9 +1920,9 @@ w = width, h = height</string>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button" image="PlayPuzzle_Btn"/>
                                                 <connections>
+                                                    <action selector="PlayPuzzleAction:" destination="Wv8-GL-8rV" eventType="touchUpInside" id="AwV-2s-fzP"/>
                                                     <action selector="PlayPuzzleAction:" destination="Vbs-EB-Iko" eventType="touchUpInside" id="Ohk-4z-cM9"/>
                                                     <action selector="PlayPuzzleAction:" destination="i8p-FO-Rc0" eventType="touchUpInside" id="U3D-pG-CvQ"/>
-                                                    <action selector="PlayPuzzleAction:" destination="Wv8-GL-8rV" eventType="touchUpInside" id="jf7-qx-2JH"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1956,7 +1956,7 @@ w = width, h = height</string>
                     <connections>
                         <outlet property="contentView" destination="HNJ-XT-Hr9" id="kDl-Kv-t6M"/>
                         <outlet property="mainView" destination="eBw-q3-DNh" id="ntS-IP-IFw"/>
-                        <outlet property="playBtn" destination="VES-cg-hwk" id="6xR-ro-Kjc"/>
+                        <outlet property="playBtn" destination="VES-cg-hwk" id="A5L-yS-TMN"/>
                         <outlet property="scrollView" destination="Qu2-TK-Rw5" id="dTS-xo-rie"/>
                     </connections>
                 </viewController>
